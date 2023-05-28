@@ -107,7 +107,15 @@ $(document).ready(function () {
         }
     });
   });
-
+  $(function () {
+    $(".Star-rate").rateYo({
+      starWidth: "15px",
+      ratedFill: "#FFC107",
+      readOnly: true,
+      normalFill: "#eee",
+      rtl:true
+    });
+  });
   $('select').niceSelect();
 });
 
