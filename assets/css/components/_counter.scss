@@ -1,10 +1,6 @@
 .counter{
-    padding-top: 100px;
-    padding-bottom: 50px;
-    @include xs{
-        padding-bottom: 0px;
-
-    }
+    padding-top: 30px;
+    padding-bottom: 0px;
     h5{
         font-weight: 600;
         margin-top: 15px;

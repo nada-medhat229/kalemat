@@ -11,21 +11,24 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 22px;
+    font-size: 20px;
     }
-    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-        color: $color-main;
-        background-color: transparent;
-
-    }
-    .nav-pills .nav-link.active::after{
-        font-family:'Bootstrap-icons';
-        content: "\F5D4";
-        font-size: 40px;
-        margin-top: -20px;
-        height: 25px;
-
-    }
+    .nav-pills{
+        margin-bottom: 2rem !important;
+        .nav-link.active, .nav-pills .show>.nav-link {
+            color: $color-main;
+            background-color: transparent;
+    
+        }
+        .nav-link.active::after{
+            font-family:'Bootstrap-icons';
+            content: "\F5D4";
+            font-size: 40px;
+            margin-top: -20px;
+            height: 25px;
+    
+        }
+    } 
     .tab-content{
         .tab-pane{
             img.img-most {

@@ -13,13 +13,14 @@
         }
         ul{
             margin-right: 5px;
+            line-height: 2.2;
             li:nth-child(1) {
                 font-size: 18px;
                 font-weight:300;
                 color: #4E4E4E;
             }
             li:nth-child(2) {
-                font-size: 25px;
+                font-size: 24px;
                 font-weight:600;
                 color: #4E4E4E;
             }
@@ -116,10 +117,10 @@
 }
 
    .owl-nav button.owl-prev {
-    margin-left: 15px
+    margin-left: 30px
   }
    .owl-nav button.owl-next {
-    margin-right: 15px
+    margin-right: 30px
   }
 
 }

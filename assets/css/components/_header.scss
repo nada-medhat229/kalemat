@@ -3,21 +3,6 @@
     @include centralized;
     position: relative;
     overflow: hidden;
-    .ani{
-        position: absolute;
-    }
-    .ani-1{
-        width: 500px;
-        animation: zoomIn 2s alternate infinite;
-        top: -300px;
-        right: -250px;
-    }
-    .ani-2{
-        width: 200px;
-        animation: zoomOut 2s alternate infinite;
-        bottom: -50px;
-        right: -100px;
-    }
     .header-contant{
         width: 50%;
         padding: 0 6.5rem;
