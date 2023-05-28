@@ -1,0 +1,167 @@
+.header-wrapper{
+    background: $color-white;
+    @include centralized;
+    position: relative;
+    overflow: hidden;
+    .ani{
+        position: absolute;
+    }
+    .ani-1{
+        width: 500px;
+        animation: zoomIn 2s alternate infinite;
+        top: -300px;
+        right: -250px;
+    }
+    .ani-2{
+        width: 200px;
+        animation: zoomOut 2s alternate infinite;
+        bottom: -50px;
+        right: -100px;
+    }
+    .header-contant{
+        width: 50%;
+        padding: 0 6.5rem;
+        color: $color-text;
+        #social-media {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            line-height: 2px;
+            transition: all 0.3s;
+            .icon{
+                @include centralized;
+                position: relative;
+                border: 1px solid $color-main;
+                color: $color-main !important;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                font-size: 14px;
+                opacity: 0.7;
+                transition: all 0.3s;
+            }
+        }
+        .header-title{
+            font-weight: bolder;
+            font-size: 30px;
+            margin: 1.5rem 0;
+        }
+        p{
+            opacity: .9;
+        }
+        .search{
+            background: $color-white;
+            box-shadow: 0px 0px 15px #00000029;
+            border: 1px solid #D0735E;
+            border-radius: 50px;
+            padding: .5rem 1.5rem;
+            margin-top: 1.5rem;
+            .search-wrapper{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .nice-select{
+                    border: none;
+                    background-color: transparent;
+                }
+                .form-control{
+                    background: transparent;
+                    border: none !important;
+                    border-right: 1px solid #D0735E !important;
+                    padding: 4px 10px;
+                    &:focus{
+                        border: none;
+                        box-shadow: unset;
+                    }
+                }
+                .input-group-text{
+                    background: transparent;
+                    border: none !important;
+                    color: $color-main;
+                    padding: 0;
+                }
+            }
+
+        }
+    }
+    .header-video{
+        width: 50% !important;
+        position:relative;
+        video{
+            width: 100%;
+            height: 100%;
+            min-height: 90vh;
+            object-fit: cover;
+        }
+        img.header-shape{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: calc(100% + 2px);
+            z-index: 7;
+            width: fit-content;
+        }
+        .video-cover-img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100% !important;
+            z-index: 5;
+            border: 0 !important;
+            margin: 0 !important;
+            background-color: transparent !important;
+            filter: brightness(.8);
+        }
+        .play-icon,.pause-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translate(50%, -50%);
+            width: 50px;
+            height: 50px;
+            @include centralized;
+            padding: 10px;
+            background-color: $color-white;
+            border-radius: 50%;
+            z-index: 9;
+            box-shadow: 0px 0px 15px #848484;
+            cursor: pointer;
+                i {
+                    font-size: 30px;
+                    line-height: 0;
+                    color: $color-main;
+                    transform: rotate(180deg);
+                }
+        }
+
+
+    }
+    
+}
+
+@include md{
+    .header-wrapper{
+        .header-contant {
+            width: 80%;
+            padding: 4rem 1.5rem;
+            color: #4E4E4E;
+        }
+        .header-video{
+            display: none;
+        }
+        .ani-2 {
+            left: -100px;
+            right: unset;
+        }
+
+    }
+}
+@media (max-width: 768px){
+    .header-wrapper{
+        .header-contant {
+            width: 100%;
+        }
+    }
+}

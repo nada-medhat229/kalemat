@@ -1,0 +1,55 @@
+.ourBooks{
+    padding-top: 2rem;
+    // padding-bottom: 2rem;
+    h3{
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+    .nav-link {
+    color: #A1A1A1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: $color-main;
+        background-color: transparent;
+
+    }
+    .nav-pills .nav-link.active::after{
+        font-family:'Bootstrap-icons';
+        content: "\F5D4";
+        font-size: 40px;
+        margin-top: -20px;
+        height: 25px;
+
+    }
+    .tab-content{
+        .tab-pane{
+            img.img-most {
+                // width: 300px;
+                // height: 380px;
+                border-radius: 20px;
+            box-shadow: 0px 0px 25px #A4A4A429;
+                margin: auto;
+                @include xs{
+                height: 380px;
+                }
+            }
+            a {
+                font-size: 24px;
+                color: #CD6B5A;
+                font-weight: 600;
+            }
+            h5 {
+                color: #72887B;
+                font-weight: 600;
+                padding-top: 15px;
+            }
+        }
+      
+    }
+  
+}

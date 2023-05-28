@@ -1,0 +1,133 @@
+.single_book_single{
+    background: $color-white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .information_book{
+             display: flex;
+             align-items: center;
+        .border{
+            width: 14px;
+            height: 200px;
+            background: #DC9170;
+            border-radius: 20px 0 0 20px;
+        }
+        ul{
+            margin-right: 5px;
+            li:nth-child(1) {
+                font-size: 18px;
+                font-weight:300;
+                color: #4E4E4E;
+            }
+            li:nth-child(2) {
+                font-size: 25px;
+                font-weight:600;
+                color: #4E4E4E;
+            }
+            li:nth-child(3) {
+                font-weight:300;
+    
+                font-size: 16px;
+                color: #A1A1A1;
+            }
+        }
+    }
+  
+    h3{
+        color: #4E4E4E;
+        font-weight: 600;
+    }
+    .Stars {
+        --percent: calc(var(--rating) / 5 * 100%);
+        font-size: 21px;
+    }
+    p {
+        color: #707070;
+        .qout-open {
+            width: 15px;
+            display: inline-block;
+          }
+    }
+     .book_img{
+        width: 250px !important;
+        height: 300px;
+        margin: auto;
+     }
+     .owl-carousel{
+        position: relative;
+     }
+     
+.owl-nav {
+    position: absolute;
+    width: max-content;
+    display: flex !important;
+    bottom: -24%;
+    margin: auto;
+    right: 44%;
+    @include md{
+        bottom: -11.8%;
+        right: 42%;
+    }
+    @include sm{
+        bottom: -12.5%;
+        right: auto;
+        left: 0;
+        }
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+  .owl-carousel .owl-nav button::after{
+    position: absolute;
+    padding: 5px;
+    content: "";
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px dashed $color-main;
+  }
+  .owl-carousel .owl-nav button:hover::after{
+    animation: rotate-animation 2s linear infinite;
+   }
+  .owl-carousel .owl-nav button.owl-next span,
+   .owl-carousel .owl-nav button.owl-prev span{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #f4e5de;
+    color: $color-main;
+  }
+  .owl-carousel .owl-nav button:hover span{
+   background-color: $color-main ;
+   color: $color-white;
+
+  }
+
+.owl-carousel .owl-nav button:hover .owl-next::after{
+    color: #fff;
+}
+
+   .owl-nav button.owl-prev {
+    margin-left: 15px
+  }
+   .owl-nav button.owl-next {
+    margin-right: 15px
+  }
+
+}
+@keyframes rotate-animation {
+	0%{
+        transform: rotate(0deg);
+       }
+    100%{
+        transform: rotate(360deg);
+       }
+}

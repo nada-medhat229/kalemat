@@ -1,0 +1,13 @@
+@mixin hover($trans) {
+  transition: #{$trans}s all ease-in-out;
+  &:hover {
+    @content;
+  }
+}
+
+@mixin centralized($gap: 0px){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap
+}

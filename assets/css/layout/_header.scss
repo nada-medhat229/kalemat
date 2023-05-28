@@ -1,0 +1,70 @@
+.navbar{
+    .container{
+        gap: 40px;
+    }
+    background: $color-white;
+    .navbar-nav{
+        width: 100%;
+        justify-content: inherit;
+    }
+    .nav-link{
+        color: $color-text !important;
+    }
+    .nav-link.active{
+        color: $color-main !important;
+        font-weight: bold;
+    }
+    .navbar-brand{
+        img{
+
+            width: 200px;
+        }
+    }
+    .option{
+        @include centralized;
+        width: fit-content;
+        .login{
+            background: $color-main;
+            color: $color-white;
+            padding: 7px 2.5rem;
+            border-radius: 41px;
+        }
+    }
+    .navbar-toggler{
+        font-size: 28px;
+        border: 0;
+        &:focus {
+            box-shadow: unset;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .navbar{
+        .navbar-toggler{
+            font-size: 18px;
+        }
+        .navbar-brand{
+            img{
+    
+                width: 120px;
+            }
+        }
+        .option {
+            .login {
+                padding: 5px 1.5rem;
+                font-size: 14px;
+            }
+        }
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: calc(100% - 1px);
+        background-color: $color-white;
+        right: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 4rem 1rem 2rem;
+        z-index: 11;
+    }
+}

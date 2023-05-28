@@ -1,0 +1,80 @@
+.discussion{
+    // background: url('/assets/images/Path\ 2576.png');
+    padding: 100px 0;
+    background: $color-main;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(50% 14%, 0 0, 0 100%, 100% 100%, 100% 0%);
+    .title{
+        color: $color-white;
+    }
+    form{
+        .form-control{
+            background: transparent;
+            border: 1px solid $color-white;
+            color: $color-white;
+            padding: 15px;
+            border-radius: 30px;
+    margin-bottom: 30px;
+    &::placeholder {
+        color: $color-white;
+        font-weight: 300;
+    }
+        }
+    }
+    .shaps{
+        position: absolute;
+        top: -235px;
+        right: -17%;
+        width: 40%;
+      
+          animation: size1_1 2.5s infinite alternate;
+  @include lg{
+    top: -165px;
+    left: -17%;
+    width: 47%;
+  }
+    @include sm{
+      width: 60%;
+  
+  }
+  @include xs{
+    top: -150px;
+    width: 65%;
+}
+      
+    }
+    .secodshap{
+      position: absolute;
+      top: -235px;
+      left: -17%;
+      width: 40%;
+      
+        animation: size1_1 2.5s infinite alternate;
+        @include lg{
+          top: -165px;
+          left: -17%;
+          width: 47%;
+        }
+          @include sm{
+            width: 60%;
+        
+        }
+        @include xs{
+          top: -150px;
+          width: 65%;
+      }
+  }
+    
+}
+  @keyframes size1_1 {
+    0%,
+    10% {
+      transform: scale(0);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }

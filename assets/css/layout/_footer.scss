@@ -1,0 +1,41 @@
+footer{
+    background: $color-white;
+    .logo{
+        width: 250px;
+        margin-bottom: 60px;
+    }
+    .header-title{
+        color: $color-main;
+        font-weight: 600;
+        padding: 10px 0;
+    }
+    ul{
+        li {
+            line-height: 2.2;
+            a{
+                color: hsla(0, 0%, 31%, 0.7);
+                font-size: 20px;
+            }
+        }
+        .social{
+            a{
+                border: 1px solid $color-second;
+                color: $color-second;
+                border-radius: 50%;
+                 padding: 0 ;
+                width: 39px;
+                display: inline-block;
+                height: 40px;
+                text-align: center;
+
+            }
+        }
+      
+    }
+}
+.lower-footer{
+    color: #747474;
+    img{
+        width: 120px;
+    }
+}

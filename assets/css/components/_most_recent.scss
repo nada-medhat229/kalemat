@@ -1,0 +1,43 @@
+.most_recent{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .header-most{
+        font-weight: 600;
+        h3{
+            font-weight: 600;
+        }
+        a{
+            font-size: 24px;
+            color: $color-main;
+        }
+    }
+    .item{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        img.img-most{
+            box-shadow: 0px 0px 25px #A4A4A429;
+            width: 300px;
+            height: 380px;
+            border-radius: 20px;
+            margin: auto;
+            @include sm{
+                width: 270px;
+
+            }
+            @include xs{
+                width: 200px;
+                height: 270px;
+
+
+            }
+        }
+        h5{
+            color: #72887B;
+            font-weight: 600;
+            padding-top: 15px;
+        }
+    }
+    .owl-carousel{
+        margin-right: 5vw;
+    }
+}
