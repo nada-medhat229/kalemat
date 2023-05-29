@@ -32,22 +32,26 @@
 
     <!-- nice select link -->
     <link rel="stylesheet" href="/assets/css/plugin/nice-select.css">
-    <!-- aos link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="/assets/css/plugin/owl.carousel.min.css" />
     <link
       rel="stylesheet"
       href="/assets/css/plugin/owl.theme.default.min.css"
     />
 
+    <!-- animate link -->
+    <link rel="stylesheet" href="./assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="/assets/css/style.css" />
+
   </head>
 
   <body>
     <!-- ======= nav ======= -->
-    <nav class="nav-bar navbar navbar-expand-lg navbar-light py-2 bg-navbar" data-aos="fade-left" data-aos-duration="800">
+    <nav class="nav-bar navbar navbar-expand-lg navbar-light py-2 bg-navbar" >
         <div class="container">
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center wow animate__backInRight" data-wow-duration="2s" data-wow-delay=".5s">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                 </span>
@@ -56,7 +60,7 @@
             </div>
             
             <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0 wow animate__backInDown">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
                 </li>
@@ -88,7 +92,7 @@
             </div>
 
             
-            <ul class="option navbar-nav text-dark" style="flex-direction: row !important;">
+            <ul class="option navbar-nav text-dark wow animate__backInLeft" style="flex-direction: row !important;" data-wow-duration="2s" data-wow-delay=".5s">
                 <li class="nav-item">
                   <a role="button" id="lang" class="nav-link">
                     <span class="px-2">EN</span>
@@ -107,7 +111,7 @@
         <img class="ani ani-2" src="./assets/images/Path 2568.svg" alt="">
         <div class="header-contant">
           <div class="container">
-            <div id="social-media">
+            <div id="social-media" class="wow animate__backInDown">
               <div class="icon">
                 <a aria-label="facebook" href="https://www.facebook.com" target="_blank" class="router-link">
                 </a>
@@ -124,9 +128,9 @@
                 <i class="fa-brands fa-linkedin-in"></i>
               </div>
             </div>
-            <h3 class="header-title">أفضل كتب على الاطلاق</h3>
-            <p>نحن وكالة أدبية حقوقية عربية مبتكرة ترفع الكتب الاستثنائية إلى المسرح العالمي.</p>
-            <div class="search">
+            <h3 class="header-title wow animate__backInRight"  data-wow-delay=".5s">أفضل كتب على الاطلاق</h3>
+            <p class="wow animate__backInLeft"  data-wow-delay=".5s">نحن وكالة أدبية حقوقية عربية مبتكرة ترفع الكتب الاستثنائية إلى المسرح العالمي.</p>
+            <div class="search wow animate__backInUp" >
               <ul class="search-wrapper">
                 <li>
                   <select aria-label="اختر النوع">
@@ -145,7 +149,7 @@
             </div>
           </div>
         </div>
-        <div class="header-video">
+        <div class="header-video wow animate__fadeInLeft">
           <img src="./assets/images/header-shape.svg" alt="" class="header-shape">
           <div class="video-wrap">
             <img src="./assets/images/cover.jpg" alt="" class="video-cover-img" class="w-100">
@@ -163,16 +167,16 @@
       </div>
     </header>
     <!-- ======= partners section ======= -->
-    <section class="partners">
+    <section class="partners wow animate__slideInRight" data-wow-duration="2s">
       <div class="container">
-        <div class="partners-heading" data-aos="zoom-in">
-          <h4>موثوق به من قبل أكثر من
+        <div class="partners-heading">
+          <h4 class="fw-bold wow animate__lightSpeedInLeft" data-wow-delay="2s">موثوق به من قبل أكثر من
             <span>
               100 شريك ودار نشر
             </span>
           </h3>
         </div>
-        <div class="partners-slider" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800">
+        <div class="partners-slider">
           <div class="owl-carousel"  >
             <div class="partner-item"> 
               <img src="./assets/images/DarWaraqPublishingandDistribution.png" alt="">
@@ -201,46 +205,71 @@
     </section>
     <!-- ======= books section ======= -->
     <section class="books">
-      <div class="custom-shape-divider-top-1684914215">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
-        </svg>
-      </div>
-      <div>
-        <div class="heading">
+      <div class="container">
+        <div class="heading wow animate__backInDown">
           <h3>المكتبة</h3>
           <p>لقد ساعدنا المؤلفين والناشرين في تأمين أكثر من 8000 ترخيص في 120 دولة و 180 لغة</p>
         </div>
         <div class="books-gallery">
-          <div class="item">
+          <div class="item wow animate__fadeInTopRight" data-wow-delay="0">
             <img src="./assets/images/20BOOK-superJumbo.png" alt="">
+            <h5 class="text-center">
+              <a href="">كتب واقعية</a>
+            </h5>
           </div>
-          <div class="item">
+          <div class="item wow animate__fadeInTopRight" data-wow-delay=".1s">
             <img src="./assets/images/20BOOK-superJumbo.png" alt="">
+            <h5 class="text-center">
+              <a href="">كتب درامية</a>
+            </h5>
           </div>
-          <div class="item">
+          <div class="item wow animate__fadeInTopRight" data-wow-delay=".2s">
             <img src="./assets/images/20BOOK-superJumbo.png" alt="">
+            <h5 class="text-center">
+              <a href="">كتب رومانسية</a>
+            </h5>
           </div>
-          <div class="item">
+          <div class="item wow animate__fadeInTopRight" data-wow-delay=".3s">
             <img src="./assets/images/20BOOK-superJumbo.png" alt="">
+            <h5 class="text-center">
+              <a href="">كتب فنتازيا</a>
+            </h5>
           </div>
-          <div class="item">
+          <div class="item wow animate__fadeInTopRight" data-wow-delay=".4s">
             <img src="./assets/images/20BOOK-superJumbo.png" alt="">
+            <h5 class="text-center">
+              <a href="">كتب رعب</a>
+            </h5>
           </div>
-          <div class="item">
+          <div class="item wow animate__fadeInTopRight" data-wow-delay=".5s">
             <img src="./assets/images/20BOOK-superJumbo.png" alt="">
+            <h5 class="text-center">
+              <a href="">كتب واقعية</a>
+            </h5>
           </div>
-          <div class="item">
+          <div class="item wow animate__fadeInTopRight" data-wow-delay=".6s">
             <img src="./assets/images/20BOOK-superJumbo.png" alt="">
+            <h5 class="text-center">
+              <a href="">كتب درامية</a>
+            </h5>
           </div>
-          <div class="item">
+          <div class="item wow animate__fadeInTopRight" data-wow-delay=".7s">
             <img src="./assets/images/20BOOK-superJumbo.png" alt="">
+            <h5 class="text-center">
+              <a href="">كتب رومانسية</a>
+            </h5>
           </div>
-          <div class="item">
+          <div class="item wow animate__fadeInTopRight" data-wow-delay=".8s">
             <img src="./assets/images/20BOOK-superJumbo.png" alt="">
+            <h5 class="text-center">
+              <a href="">كتب فنتازيا</a>
+            </h5>
           </div>
-          <div class="item">
+          <div class="item wow animate__fadeInTopRight" data-wow-delay=".9s">
             <img src="./assets/images/20BOOK-superJumbo.png" alt="">
+            <h5 class="text-center">
+              <a href="">كتب رعب</a>
+            </h5>
           </div>
         </div>
       </div>
@@ -320,94 +349,97 @@
             tabindex="0"
           >
             <div class="row">
-              <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600">
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay="0">
                 <div class="text-center position-relative">
-                  <a href="/index.html" class="link"></a>
-                  <img
-                    src="/assets/images/Group 427319511.png"
-                    class="img-most"
-                    alt=""
-                  />
-                  <h5>عن العيش والموت</h5>
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن العيش والموت</h5>
+                  </a>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="100">
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".1s">
                 <div class="text-center position-relative">
-                  <a href="/index.html" class="link"></a>
+                  <a href="/index.html">
+                    <img src="/assets/images/image.png" class="img-most" alt="" />
+                    <h5>استجواب كريشنامورتي</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".2s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>كتاب الحياة</h5>
+                  </a>
 
-                  <img src="/assets/images/image.png" class="img-most" alt="" />
-                  <h5>استجواب كريشنامورتي</h5>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="200">
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".3s">
                 <div class="text-center position-relative">
-                  <a href="/index.html" class="link"></a>
-
-                  <img
-                    src="/assets/images/Group 427319511.png"
-                    class="img-most"
-                    alt=""
-                  />
-                  <h5>كتاب الحياة</h5>
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/image 44.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن الحرية</h5>
+                  </a>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6 mb-5"data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="300">
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".4s">
                 <div class="text-center position-relative">
-                  <a href="/index.html" class="link"></a>
-
-                  <img
-                    src="/assets/images/image 44.png"
-                    class="img-most"
-                    alt=""
-                  />
-                  <h5>عن الحرية</h5>
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن العيش والموت</h5>
+                  </a>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="400">
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".5s">
                 <div class="text-center position-relative">
-                  <a href="/index.html" class="link"></a>
-
-                  <img
-                    src="/assets/images/Group 427319511.png"
-                    class="img-most"
-                    alt=""
-                  />
-                  <h5>عن العيش والموت</h5>
+                  <a href="/index.html">
+                    <img src="/assets/images/image.png" class="img-most" alt="" />
+                    <h5>استجواب كريشنامورتي</h5>
+                  </a>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="500">
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".6s">
                 <div class="text-center position-relative">
-                  <a href="/index.html" class="link"></a>
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>كتاب الحياة</h5>
+                  </a>
 
-                  <img src="/assets/images/image.png" class="img-most" alt="" />
-                  <h5>استجواب كريشنامورتي</h5>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="600">
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".7s">
                 <div class="text-center position-relative">
-                  <a href="/index.html" class="link"></a>
-
-                  <img
-                    src="/assets/images/Group 427319511.png"
-                    class="img-most"
-                    alt=""
-                  />
-                  <h5>كتاب الحياة</h5>
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/image 44.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن الحرية</h5>
+                  </a>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="700">
-                <div class="text-center position-relative">
-                  <a href="/index.html" class="link"></a>
-
-                  <img
-                    src="/assets/images/image 44.png"
-                    class="img-most"
-                    alt=""
-                  />
-                  <h5>عن الحرية</h5>
-                </div>
-              </div>
-              <div class="col-12 text-center my-4">
+              <div class="col-12 text-center">
                 <a href="/more.html">
                   المزيد
                   <i class="bi bi-arrow-left"></i>
@@ -422,101 +454,104 @@
             aria-labelledby="pills-profile-tab"
             tabindex="0"
           >
-          <div class="row">
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن العيش والموت</h5>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay="0">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن العيش والموت</h5>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="100">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".1s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img src="/assets/images/image.png" class="img-most" alt="" />
+                    <h5>استجواب كريشنامورتي</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".2s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>كتاب الحياة</h5>
+                  </a>
 
-                <img src="/assets/images/image.png" class="img-most" alt="" />
-                <h5>استجواب كريشنامورتي</h5>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="200">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".3s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/image 44.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن الحرية</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".4s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن العيش والموت</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".5s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img src="/assets/images/image.png" class="img-most" alt="" />
+                    <h5>استجواب كريشنامورتي</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".6s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>كتاب الحياة</h5>
+                  </a>
 
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>كتاب الحياة</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".7s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/image 44.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن الحرية</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <a href="/more.html">
+                  المزيد
+                  <i class="bi bi-arrow-left"></i>
+                </a>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 mb-5"data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="300">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/image 44.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن الحرية</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="400">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن العيش والموت</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="500">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img src="/assets/images/image.png" class="img-most" alt="" />
-                <h5>استجواب كريشنامورتي</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="600">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>كتاب الحياة</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="700">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/image 44.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن الحرية</h5>
-              </div>
-            </div>
-            <div class="col-12 text-center my-4">
-              <a href="/more.html">
-                المزيد
-                <i class="bi bi-arrow-left"></i>
-              </a>
-            </div>
-          </div>
           </div>
           <div
             class="tab-pane fade"
@@ -525,101 +560,104 @@
             aria-labelledby="pills-contact-tab"
             tabindex="0"
           >
-          <div class="row">
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن العيش والموت</h5>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay="0">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن العيش والموت</h5>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="100">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".1s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img src="/assets/images/image.png" class="img-most" alt="" />
+                    <h5>استجواب كريشنامورتي</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".2s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>كتاب الحياة</h5>
+                  </a>
 
-                <img src="/assets/images/image.png" class="img-most" alt="" />
-                <h5>استجواب كريشنامورتي</h5>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="200">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".3s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/image 44.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن الحرية</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".4s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن العيش والموت</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".5s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img src="/assets/images/image.png" class="img-most" alt="" />
+                    <h5>استجواب كريشنامورتي</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".6s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>كتاب الحياة</h5>
+                  </a>
 
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>كتاب الحياة</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".7s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/image 44.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن الحرية</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <a href="/more.html">
+                  المزيد
+                  <i class="bi bi-arrow-left"></i>
+                </a>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 mb-5"data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="300">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/image 44.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن الحرية</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="400">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن العيش والموت</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="500">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img src="/assets/images/image.png" class="img-most" alt="" />
-                <h5>استجواب كريشنامورتي</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="600">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>كتاب الحياة</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="700">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/image 44.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن الحرية</h5>
-              </div>
-            </div>
-            <div class="col-12 text-center my-4">
-              <a href="/more.html">
-                المزيد
-                <i class="bi bi-arrow-left"></i>
-              </a>
-            </div>
-          </div>
           </div>
           <div
             class="tab-pane fade"
@@ -628,107 +666,110 @@
             aria-labelledby="pills-best-tab"
             tabindex="0"
           >
-          <div class="row">
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن العيش والموت</h5>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay="0">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن العيش والموت</h5>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="100">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".1s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img src="/assets/images/image.png" class="img-most" alt="" />
+                    <h5>استجواب كريشنامورتي</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".2s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>كتاب الحياة</h5>
+                  </a>
 
-                <img src="/assets/images/image.png" class="img-most" alt="" />
-                <h5>استجواب كريشنامورتي</h5>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="200">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".3s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/image 44.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن الحرية</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".4s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن العيش والموت</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".5s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img src="/assets/images/image.png" class="img-most" alt="" />
+                    <h5>استجواب كريشنامورتي</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".6s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/Group 427319511.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>كتاب الحياة</h5>
+                  </a>
 
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>كتاب الحياة</h5>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mb-5 wow animate__fadeInBottomLeft" data-wow-delay=".7s">
+                <div class="text-center position-relative">
+                  <a href="/index.html">
+                    <img
+                      src="/assets/images/image 44.png"
+                      class="img-most"
+                      alt=""
+                    />
+                    <h5>عن الحرية</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 text-center">
+                <a href="/more.html">
+                  المزيد
+                  <i class="bi bi-arrow-left"></i>
+                </a>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6 mb-5"data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="300">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/image 44.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن الحرية</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="400">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن العيش والموت</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="500">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img src="/assets/images/image.png" class="img-most" alt="" />
-                <h5>استجواب كريشنامورتي</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="600">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/Group 427319511.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>كتاب الحياة</h5>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5" data-aos="fade-down-left" data-aos-duration="600" data-aos-delay="700">
-              <div class="text-center position-relative">
-                <a href="/index.html" class="link"></a>
-
-                <img
-                  src="/assets/images/image 44.png"
-                  class="img-most"
-                  alt=""
-                />
-                <h5>عن الحرية</h5>
-              </div>
-            </div>
-            <div class="col-12 text-center my-4">
-              <a href="/more.html">
-                المزيد
-                <i class="bi bi-arrow-left"></i>
-              </a>
-            </div>
-          </div>
           </div>
         </div>
       </div>
     </section>
     <!-- =======  Book store section ======= -->
-    <section class="Book_store"  data-aos="zoom-in" data-aos-duration="600">
+    <section class="Book_store">
       <div class="container">
         <div class="diamond-section">
           <span></span>
@@ -741,18 +782,18 @@
         <div class="row contain-store">
           <div class="col-lg-7">
             <div class="texts pe-5">
-              <p>
+              <p class="wow animate__fadeInDown">
                 لقد ساعدنا المؤلفين والناشرين في تأمين أكثر من 8000 ترخيص في 120
                 دولة و 180 لغة
               </p>
-              <a href="/more.html" class="main-send">
+              <a href="/more.html" class="main-send wow animate__fadeInUp">
                 متجر الكتب
                 <i class="bi bi-arrow-left"></i>
               </a>
             </div>
           </div>
           <div class="col-lg-5 text-center">
-            <img src="/assets/images/Group 75673.png" alt="" class="book_img" />
+            <img src="/assets/images/Group 75673.png" alt="" class="book_img wow animate__fadeInLeft" />
           </div>
         </div>
       </div>
@@ -771,7 +812,7 @@
         </div>
       </div>
       <div class="owl-carousel">
-        <div class="item"  data-aos="fade-left" data-aos-duration="600">
+        <div class="item wow animate__lightSpeedInRight" data-wow-delay="0">
           <div class="text-center">
             <img
               src="/assets/images/Group 427319511.png"
@@ -781,13 +822,13 @@
             <h5>عن العيش والموت</h5>
           </div>
         </div>
-        <div class="item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="150">
+        <div class="item wow animate__lightSpeedInRight" data-wow-delay=".2s">
           <div class="text-center">
             <img src="/assets/images/image.png" class="img-most" alt="" />
             <h5>استجواب كريشنامورتي</h5>
           </div>
         </div>
-        <div class="item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="300">
+        <div class="item wow animate__lightSpeedInRight" data-wow-delay=".4s">
           <div class="text-center">
             <img
               src="/assets/images/Group 427319511.png"
@@ -797,7 +838,7 @@
             <h5>كتاب الحياة</h5>
           </div>
         </div>
-        <div class="item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="450">
+        <div class="item wow animate__lightSpeedInRight" data-wow-delay=".6s">
           <div class="text-center">
             <img src="/assets/images/image 44.png" class="img-most" alt="" />
             <h5>عن الحرية</h5>
@@ -812,7 +853,7 @@
           <div class="item">
             <div class="row align-items-center">
               <div class="col-lg-4">
-                <div class="information_book">
+                <div class="information_book wow animate__fadeInRight">
                   <div class="border"></div>
                   <ul>
                     <li>المؤلف<span> : جيدو كريشنامورتي</span></li>
@@ -821,14 +862,14 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 wow animate__fadeInDown">
                 <img
-                  src="/assets/images/Group 75673.png"
+                  src="/assets/images/OJK9411.png"
                   alt=""
-                  class="book_img"
+                  class="book_img wow animate__pulse" data-wow-delay="1s"
                 />
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 wow animate__fadeInLeft">
                 <div class="Stars" style="--rating: 4"></div>
                 <h3 class="pb-3">اسم المستخدم</h3>
                 <div>
@@ -866,7 +907,7 @@
               </div>
               <div class="col-lg-4">
                 <img
-                  src="/assets/images/Group 75673.png"
+                  src="/assets/images//OJK9411.png"
                   alt=""
                   class="book_img"
                 />
@@ -905,8 +946,8 @@
         <div
           class="d-flex justify-content-around align-items-center flex-sm-row flex-column"
         >
-          <div class="text-center">
-            <div class="circle" data-aos="fade-up" data-aos-duration="600" >
+          <div class="text-center wow animate__lightSpeedInLeft" data-wow-delay="0">
+            <div class="circle">
               <div
                 class="charts"
                 data-progress="800"
@@ -915,8 +956,8 @@
             </div>
             <h5>دار نشر</h5>
           </div>
-          <div class="text-center">
-            <div class="circle" data-aos="fade-up" data-aos-duration="600" >
+          <div class="text-center wow animate__lightSpeedInLeft" data-wow-delay=".2s">
+            <div class="circle">
               <div
                 class="charts"
                 data-progress="500"
@@ -925,8 +966,8 @@
             </div>
             <h5>مؤلف</h5>
           </div>
-          <div class="text-center">
-            <div class="circle" data-aos="fade-up" data-aos-duration="600" >
+          <div class="text-center wow animate__lightSpeedInLeft" data-wow-delay=".4s">
+            <div class="circle">
               <div
                 class="charts"
                 data-progress="55"
@@ -935,8 +976,8 @@
             </div>
             <h5>مشروع</h5>
           </div>
-          <div class="text-center">
-            <div class="circle" data-aos="fade-up" data-aos-duration="600" >
+          <div class="text-center wow animate__lightSpeedInLeft" data-wow-delay=".6s">
+            <div class="circle">
               <div
                 class="charts"
                 data-progress="80"
@@ -966,30 +1007,30 @@
       </div>
       <div class="container">
         <div class="">
-          <h3 class="text-center title py-5">
+          <h3 class="text-center title py-5 wow animate__pulse">
             يمكنكم الإشتراك في نشرتنا البريدية لمعرفة كل جديد
           </h3>
           <form action="">
             <div class="row px-md-5 px-0 justify-content-center">
-              <div class="col-lg-5">
+              <div class="col-lg-5 wow animate__fadeInRight">
                 <input type="text" class="form-control" placeholder="الاسم" />
               </div>
-              <div class="col-lg-5">
+              <div class="col-lg-5 wow animate__fadeInLeft">
                 <input
-                  type="number"
+                  type="text"
                   class="form-control"
                   placeholder="رقم الجوال"
                 />
               </div>
-              <div class="col-10">
+              <div class="col-10 wow animate__fadeInUp" data-wow-delay=".5s">
                 <input
-                  type="number"
+                  type="email"
                   class="form-control"
                   placeholder="البريد الالكتروني"
                 />
               </div>
               <div class="col-12 text-center">
-                <button type="submit" class="main-send">
+                <button type="submit" class="main-send wow animate__jackInTheBox" data-wow-delay=".75s">
                   إرسال
                   <i class="fa-solid fa-arrow-left-long"></i>
                 </button>
@@ -1000,10 +1041,10 @@
       </div>
     </section>
     <!-- ======= footer ======= -->
-    <footer class="py-5" data-aos="fade-down" data-aos-duration="600" >
+    <footer class="py-5">
       <div class="container">
         <div class="text-center">
-          <img src="/assets/images/Layer 2.svg" alt="" class="logo" />
+          <img src="/assets/images/Layer 2.svg" alt="" class="logo wow animate__tada" />
         </div>
         <div class="row">
           <div class="col-lg-4">
@@ -1011,36 +1052,36 @@
             <div class="row">
               <div class="col-6">
                 <ul>
-                  <li>
-                    <a href=""> الرئيسية </a>
+                  <li class="wow animate__fadeInRight" data-wow-delay="0">
+                    <a href="index.html"> الرئيسية </a>
                   </li>
-                  <li>
-                    <a href=""> من نحن </a>
+                  <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                    <a href="aboutUs.html"> من نحن </a>
                   </li>
-                  <li>
-                    <a href=""> الكتب </a>
+                  <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+                    <a href="books.html"> الكتب </a>
                   </li>
-                  <li>
-                    <a href=""> دور النشر </a>
+                  <li class="wow animate__fadeInRight" data-wow-delay=".8s">
+                    <a href="publish.html"> دور النشر </a>
                   </li>
-                  <li>
-                    <a href=""> المشاريع </a>
+                  <li class="wow animate__fadeInRight" data-wow-delay="1s">
+                    <a href="projects.html"> المشاريع </a>
                   </li>
                 </ul>
               </div>
               <div class="col-6">
                 <ul>
-                  <li>
-                    <a href=""> المدونة </a>
+                  <li class="wow animate__fadeInRight" data-wow-delay="0">
+                    <a href="blogs.html"> المدونة </a>
                   </li>
-                  <li>
-                    <a href=""> الأخبار </a>
+                  <li  class="wow animate__fadeInRight" data-wow-delay=".2s">
+                    <a href="news.html"> الأخبار </a>
                   </li>
-                  <li>
-                    <a href=""> المؤلفين </a>
+                  <li  class="wow animate__fadeInRight" data-wow-delay=".4s">
+                    <a href="authors.html"> المؤلفين </a>
                   </li>
-                  <li>
-                    <a href=""> الوظائف </a>
+                  <li  class="wow animate__fadeInRight" data-wow-delay=".6s">
+                    <a href="jobs"> الوظائف </a>
                   </li>
                 </ul>
               </div>
@@ -1049,37 +1090,37 @@
           <div class="col-lg-4">
             <h3 class="header-title">المساعدة</h3>
             <ul>
-              <li>
-                <a href="/question.html"> الأسئلة الشائعة </a>
+              <li class="wow animate__fadeInRight" data-wow-delay="0">
+                <a href="question.html"> الأسئلة الشائعة </a>
               </li>
-              <li>
-                <a href=""> الشروط والأحكام </a>
+              <li class="wow animate__fadeInRight" data-wow-delay=".2s">
+                <a href="condition.html"> الشروط والأحكام </a>
               </li>
-              <li>
-                <a href="/privacyPolicy.html"> سياسة الخصوصية </a>
+              <li class="wow animate__fadeInRight" data-wow-delay=".4s">
+                <a href="privacyPolicy.html"> سياسة الخصوصية </a>
               </li>
-              <li>
-                <a href=""> أسباب التعرض للقائمة السوداء </a>
+              <li class="wow animate__fadeInRight" data-wow-delay=".6s">
+                <a href="blackList.html"> أسباب التعرض للقائمة السوداء </a>
               </li>
             </ul>
           </div>
           <div class="col-lg-4">
             <h3 class="header-title">معلومات التواصل</h3>
             <ul>
-              <li>
+              <li  class="wow animate__fadeInRight" data-wow-delay="0">
                 <a href="tel:+966568565">
                   معلومات التواصل
                   <span>: +9658547856</span>
                 </a>
               </li>
-              <li>
+              <li  class="wow animate__fadeInRight" data-wow-delay=".2s">
                 <a href="">
                   البريد الإلكتروني
                   <span>: mail@mail.com </span>
                 </a>
               </li>
 
-              <li class="social mt-4">
+              <li class="social mt-4 wow animate__fadeInRight" data-wow-delay=".4s">
                 <a href="">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
@@ -1125,11 +1166,11 @@
     <!-- fancyBox script -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     
-    <!-- aos script -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- JS Coded -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!-- nice select script -->
+    <script src="./assets/js/plugin/wow.min.js"></script>
+
     <script src="/assets/js/plugin/jquery.nice-select.min.js"></script>
     <!-- owl carousel script -->
     <script src="/assets/js/plugin/owl.carousel.min.js"></script>

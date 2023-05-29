@@ -1,6 +1,4 @@
 .ourBooks{
-    padding-top: 2rem;
-    // padding-bottom: 2rem;
     h3{
         font-weight: 600;
         padding-bottom: 1rem;
@@ -32,14 +30,19 @@
     .tab-content{
         .tab-pane{
             img.img-most {
-                // width: 300px;
-                // height: 380px;
+                height: 310px;
                 border-radius: 20px;
             box-shadow: 0px 0px 25px #A4A4A429;
                 margin: auto;
+                object-fit: cover;
+                transition: .3s;
+                &:hover{
+                    transform: scale(1.05);
+                }
                 @include xs{
                 height: 380px;
                 }
+            
             }
             a {
                 font-size: 24px;

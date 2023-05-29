@@ -5,7 +5,7 @@
     overflow: hidden;
     .header-contant{
         width: 50%;
-        padding: 0 6.5rem;
+        padding: 0 4.2rem;
         color: $color-text;
         #social-media {
             display: flex;
@@ -20,20 +20,26 @@
                 border: 1px solid $color-main;
                 color: $color-main !important;
                 border-radius: 50%;
-                width: 30px;
-                height: 30px;
-                font-size: 14px;
+                width: 38px;
+                height: 38px;
+                font-size: 16px;
                 opacity: 0.7;
                 transition: all 0.3s;
+                &:hover{
+                   background: $color-main;
+                   color: $color-white !important;
+                   transform: translateY(-5px);
+                }
             }
         }
         .header-title{
             font-weight: bolder;
-            font-size: 30px;
+            font-size: 33px;
             margin: 1.5rem 0;
         }
         p{
-            opacity: .9;
+            opacity: .5;
+            font-size: larger;
         }
         .search{
             background: $color-white;
@@ -98,6 +104,7 @@
             margin: 0 !important;
             background-color: transparent !important;
             filter: brightness(.8);
+            object-fit: cover;
         }
         .play-icon,.pause-icon {
             position: absolute;
