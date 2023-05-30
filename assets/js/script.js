@@ -1,7 +1,9 @@
 $(document).ready(function () {
   // loading
-  $("#loading").fadeOut(1500);
-
+ 
+  setTimeout(function () {
+    $("#loading").fadeOut();
+  }, 3000);
   $(".play-icon").click(function(){
     document.querySelector(".header-video video").play();
     $(this).addClass("d-none");

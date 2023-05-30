@@ -1,0 +1,118 @@
+
+.news {
+    .news-wrapper {
+        h5{
+            color:#2D2D2D;
+        }
+        .news-wrapper-img{
+            border-radius: 10px;
+            height: 215px;
+            overflow: hidden;
+            img{
+                height: 100%;
+              }
+          }
+          p.cut-text{
+            -webkit-line-clamp: 2;
+            color: #818181;
+            line-height: 1.8;
+            margin: 1rem 0;
+          }
+          .date{
+           padding: 10px 0;
+           color: #8D8D8D;
+              .bi{
+                color: $color-main;
+              }
+          }
+          .more{
+            display: flex; 
+            align-items:center;
+            justify-content:space-between;
+            position: relative ;
+            border-top: 1px solid #81818150;
+            padding: 1rem 0;
+          }
+          a{
+            color: $color-main;
+          }
+    }
+}
+
+.single-news{
+    padding-bottom: 5rem;
+    h4{
+        color: $color-main;
+    }
+    .news-img{
+        height: 60vh;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .news-details {
+        p{
+            color: #707070;
+            line-height:1.9;
+            font-size: 19px;
+            padding-bottom: 1rem;
+          }
+    } 
+    .news-wrapper{
+        background: $color-white;
+        padding-bottom: 1rem;
+    }
+    .description-comments{
+            .avatar{
+                    img{
+                        border-radius: 50%;
+
+                    }
+            }
+       
+                .user-comment-container{
+                    padding: 20px 0 0;
+                    .border{
+                        width: 90%;
+                        height: 1px;
+                        background: #D5D5D5;
+                        margin-top: 20px;
+                    }
+                    .sec-small{
+                        padding-bottom: 15px;
+                        p{
+                            color: #757575;
+                            padding-right: 10px;
+                            font-size: 12px;
+                        }
+                    }
+                    
+                        .border:last-child{
+                            width: 0;
+                            background: transparent;
+                        }
+                    
+                }
+                .your-comment{
+                    .title{
+                        font-size: 24px;
+                    }
+                    .btn-comment{
+                        background: $color-main;
+                        color: $color-white;
+                        font-weight: bold;
+                        font-size: 22px;
+                        padding: 8px;
+                        width: 220px;
+                        border-radius: 25px;
+                        margin-top: 25px;
+                    }
+                    textarea{
+                        border-radius: 10px;
+                        border: 1px solid #DEDEDE;
+                    }
+                }
+            }
+        
+    
+      }
+ 
