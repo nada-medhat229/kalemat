@@ -1,0 +1,41 @@
+.question{
+    .accordion-item{
+        border: 1px solid #E9E9E9;
+        border-radius: 10px !important;
+
+        .accordion-button{
+        border-radius: 10px !important;
+        padding: 18px 40px;
+        font-size: 22px;
+        color: $color-main;
+            &:focus {
+                border-color: transparent;
+                box-shadow:none;
+            }
+            &::after {
+                margin-left: 0;
+                margin-right: auto;
+                background-image: none;
+                content: '\F4FE';
+                font-family:'Bootstrap-icons';
+                font-size: 40px;
+            font-weight: 600;
+            height: auto;
+            }
+            &:not(.collapsed){
+                background-color: $color-white;
+                box-shadow: none;
+                &::after{
+                
+                    content: '\F2EA';
+            
+                }
+            }
+        }
+      .accordion-body{
+        padding: 0 35px 35px 45px;
+      }
+       
+    }
+   
+}

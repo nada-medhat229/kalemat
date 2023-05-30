@@ -1340,6 +1340,49 @@ section {
   }
 }
 
+.question .accordion-item {
+  border: 1px solid #E9E9E9;
+  border-radius: 10px !important;
+}
+
+.question .accordion-item .accordion-button {
+  border-radius: 10px !important;
+  padding: 18px 40px;
+  font-size: 22px;
+  color: #CD6B5A;
+}
+
+.question .accordion-item .accordion-button:focus {
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.question .accordion-item .accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+  background-image: none;
+  content: '\F4FE';
+  font-family: 'Bootstrap-icons';
+  font-size: 40px;
+  font-weight: 600;
+  height: auto;
+}
+
+.question .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.question .accordion-item .accordion-button:not(.collapsed)::after {
+  content: '\F2EA';
+}
+
+.question .accordion-item .accordion-body {
+  padding: 0 35px 35px 45px;
+}
+
 .breadcrumb {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
