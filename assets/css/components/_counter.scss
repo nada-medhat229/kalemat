@@ -9,8 +9,8 @@
 
     }
     .circle{
-        width: 110px;
-        height: 110px;
+        width: 135px;
+        height: 135px;
         background: #d47e65;
         text-align: center;
         border-radius: 50%;
@@ -20,11 +20,11 @@
         &::before{
             position: absolute;
             content: "";
-            width: 8px;
-            height: 8px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             background: #fff;
-            top: 2px;
+            top: 14px;
         }
         .charts {
             display: flex;

@@ -1,0 +1,93 @@
+.jobs{
+    margin: 80px 0;
+    .job-wrapper {
+        border: 1px solid #BFBFBF;
+        border-radius: 19px;
+        padding: 2rem 3rem;
+        margin-bottom: 1.6rem;
+        transition: .3s all;
+        .job-title{
+            color: $color-main;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .job-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .job-note{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: $colo-muted;
+            }
+        }
+        .apply-btn{
+            background-color: #DBDBDB;
+            border-radius: 41px;
+            color: $color-text;
+            padding: .65rem 6rem;
+            font-weight: 500;
+            transition: .3s all;
+        }
+        &:hover{
+            background: $color-white;
+            border-color: $color-white;
+            .apply-btn{
+                background-color: $color-main;
+                color: $color-white;
+            }
+        }
+    }   
+}
+.single-job.jobs{
+    .job-wrapper{
+        border: none;
+        background-color: $color-white;
+    }
+    .apply-btn{
+        display: block;
+        width: 55%;
+        margin: auto;
+        background: $color-main;
+        color: $color-white;
+        border-radius: 45px;
+        padding: .75rem ;
+        margin-top: 3rem;
+    }
+}
+
+@include md{
+    .jobs{
+        .job-wrapper {
+            .apply-btn{
+                padding: .65rem 4.5rem;
+            }
+        }
+    }   
+}
+@include sm{
+    .jobs{
+        .job-wrapper {
+            padding: 1rem 2rem;
+            .job-content{
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            .apply-btn{
+                margin-top: 1rem;
+                padding: .5rem 4.5rem;
+            }
+        }
+    }
+    .single-job.jobs{
+        .job-title {
+            text-align: start !important;
+        }  
+        .apply-btn{
+            margin-top: 2rem;
+            width: 80%;
+        }
+    } 
+}

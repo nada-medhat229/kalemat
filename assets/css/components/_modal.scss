@@ -1,0 +1,39 @@
+#jobModal{
+    .modal-content {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 78px;
+        padding: 3rem 2rem;
+        .modal-header {
+            justify-content: center;
+            border: none ;
+            border-radius: 0 !important;
+            padding: 0;
+        } 
+        .form-control{
+            background: $color-gray-bg;
+            border-radius: 14px;
+            padding: 14px 1.3rem;
+            border: none
+        }       
+        .modal-title{
+            color: $color-main;
+            text-align: center;
+            font-weight: bold;
+        }
+        .apply-btn{
+            display: block;
+            width: 55%;
+            margin: auto;
+            background: $color-main;
+            color: $color-white;
+            border-radius: 45px;
+            padding: 1rem .75rem ;
+            margin-bottom: 3rem;
+        }
+    }
+}
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 80%;
+    }
+}

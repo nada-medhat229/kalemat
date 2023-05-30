@@ -117,7 +117,10 @@ $(document).ready(function () {
     });
   });
   $('select').niceSelect();
+
+  // wow.js init
+  new WOW().init();
 });
 
 
-AOS.init();
+

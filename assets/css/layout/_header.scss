@@ -9,7 +9,26 @@
     }
     .nav-link{
         color: $color-text !important;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: $color-main;
+        }
+        &:hover{
+            color: $color-main !important;
+        }
+        &:hover::before{
+            width: 100%;
+            transition: .25s;
+        }
+
     }
+
     .nav-link.active{
         color: $color-main !important;
         font-weight: bold;
@@ -26,8 +45,21 @@
         .login{
             background: $color-main;
             color: $color-white;
-            padding: 7px 2.5rem;
+            padding: 8px 2.5rem;
             border-radius: 41px;
+            border: 2px solid $color-main;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(to right, $color-white 50%, $color-main 50%);
+            background-size: 250% 100%;
+            background-position: right bottom;
+            transition: .5s all;
+            &:hover {
+                background-position: left bottom;
+                color: $color-main;
+            }
         }
     }
     .navbar-toggler{
@@ -39,7 +71,7 @@
     }
 }
 
-@media (max-width: 992px){
+@include md{
     .navbar{
         .navbar-toggler{
             font-size: 18px;
@@ -66,5 +98,18 @@
         width: 100%;
         padding: 1rem 4rem 1rem 2rem;
         z-index: 11;
+    }
+}
+@include sm{
+    .navbar{
+        .container{
+            gap: 0;
+        }
+        .option {
+            .login {
+                padding: 5px 1.1rem;
+                font-size: 12px;
+            }
+        }
     }
 }
