@@ -889,7 +889,7 @@ section {
   font-size: 12px;
 }
 
-.single-news .description-comments .user-comment-container .border:last-child {
+.single-news .description-comments .user-comment-container:last-child .border {
   width: 0;
   background: transparent;
 }
@@ -902,7 +902,7 @@ section {
   background: #CD6B5A;
   color: #fff;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
   padding: 8px;
   width: 220px;
   border-radius: 25px;
