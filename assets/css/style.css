@@ -789,6 +789,11 @@ section {
           transform: translateY(-50%);
 }
 
+.news .news-wrapper {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
 .news .news-wrapper h5 {
   color: #2D2D2D;
 }
@@ -912,6 +917,250 @@ section {
 .single-news .description-comments .your-comment textarea {
   border-radius: 10px;
   border: 1px solid #DEDEDE;
+}
+
+.publish-header {
+  background: #fff;
+  padding: 20px 0;
+  margin: 40px 0;
+}
+
+.publish-header h4 {
+  color: #CD6B5A;
+}
+
+.publish-header .search-bar {
+  position: relative;
+}
+
+.publish-header .search-bar input[type="search"] {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 15px #00000029;
+          box-shadow: 0px 0px 15px #00000029;
+}
+
+.publish-header .search-bar .icon {
+  position: absolute;
+  background: #fff;
+  color: #CD6B5A;
+  top: 25%;
+  left: 15px;
+}
+
+.publish .item {
+  max-height: 380px;
+  height: 400px;
+  background: #fff;
+  border-radius: 15px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-shadow: 0px 0px 25px #A4A4A429;
+          box-shadow: 0px 0px 25px #A4A4A429;
+}
+
+.publish .item img {
+  padding: 20px 0;
+}
+
+.publish .item:hover {
+  scale: 1.1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.publish a {
+  color: #000;
+  font-weight: 600;
+}
+
+.publish .pagination {
+  padding: 10px 5px 8px;
+  background: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  border-radius: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.publish .pagination .page-item:first-child .page-link {
+  border-radius: 0 25px 25px 0;
+  border-left: 1px solid #6e6e6e6b;
+  color: #CD6B5A;
+}
+
+.publish .pagination .page-item:last-child .page-link {
+  border-radius: 25px 0 0 25px;
+  border-right: 1px solid #6e6e6e6b;
+  color: #CD6B5A;
+}
+
+.publish .pagination .page-link {
+  padding: 0 15px;
+  border: 0;
+  color: #6E6E6E;
+}
+
+.publish .pagination .page-link.active {
+  color: #CD6B5A;
+  background: transparent;
+}
+
+.single-publish {
+  background: #CD6B5A;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.single-publish .search-bar {
+  position: relative;
+  background: transparent;
+}
+
+.single-publish .search-bar input[type="search"] {
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  padding: 10px 15px;
+  border-bottom: 2px solid #fff;
+}
+
+.single-publish .search-bar input[type="search"]::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.single-publish .search-bar input[type="search"]:-ms-input-placeholder {
+  color: #fff;
+}
+
+.single-publish .search-bar input[type="search"]::-ms-input-placeholder {
+  color: #fff;
+}
+
+.single-publish .search-bar input[type="search"]::placeholder {
+  color: #fff;
+}
+
+.single-publish .search-bar .icon {
+  position: absolute;
+  background: transparent;
+  color: #fff;
+  top: 25%;
+  left: 15px;
+}
+
+.single-publish .item {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+}
+
+.single-publish .item img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.single-publish .tab-content {
+  width: 100%;
+  background: #fff;
+  margin-top: 40px;
+}
+
+.single-publish .tab-content .tab-pane {
+  width: 80%;
+  margin: auto;
+  color: #000;
+}
+
+.single-publish .nav-pills {
+  border-radius: 40px 0 0 40px;
+  margin-right: 0px;
+}
+
+.single-publish .nav-pills .nav-link {
+  padding: 20px;
+  background: #CD6B5A;
+  border-radius: 0;
+  text-align: right;
+  position: relative;
+  color: #fff;
+}
+
+.single-publish .nav-pills .nav-link .bi {
+  position: absolute;
+  top: 8px;
+  right: -1px;
+  width: 55px;
+  height: 59px;
+  background: transparent;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+}
+
+.single-publish .nav-pills .nav-link h4 {
+  margin-right: 30px;
+}
+
+.single-publish .nav-pills .nav-link:first-of-type {
+  border-radius: 40px 0 0 0;
+}
+
+.single-publish .nav-pills .nav-link.active, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link {
+  border-radius: 0 40px 40px 0;
+  color: #cd6b5a;
+  background-color: #fff;
+  position: relative;
+  padding: 40px 0;
+  font-weight: 600;
+}
+
+.single-publish .nav-pills .nav-link.active .bi, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link .bi {
+  background: #FFF;
+  top: 25px;
+  right: -26px;
+}
+
+.single-publish .nav-pills .nav-link.active::after {
+  content: "";
+  background-color: #CD6B5A;
+  border-radius: 40px 0 0;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: -5px;
+  z-index: 0000;
+  right: 0;
+}
+
+.single-publish .nav-pills .nav-link.active::before {
+  content: "";
+  background-color: #CD6B5A;
+  border-radius: 0 0 0 40px;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: -5px;
+  z-index: 0000;
+  right: 0;
+}
+
+.single-publish .full-page {
+  border-radius: 40px;
 }
 
 .navbar {

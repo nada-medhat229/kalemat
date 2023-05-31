@@ -1,0 +1,128 @@
+.single-publish{
+    background: $color-main;
+    color: $color-white;
+    border-radius: 50px;
+    .search-bar{
+    position: relative;
+    background: transparent;
+        input[type="search"] {
+            width: 100%;
+    background: transparent;
+    color: $color-white;
+            padding: 10px 15px;
+            border-bottom: 2px solid $color-white;
+            &::placeholder {
+               
+                color: $color-white;
+            }
+          }
+          .icon {
+            position: absolute;
+            background: transparent;
+            color: $color-white;
+            top: 25%;
+            left: 15px;
+        }
+    }
+    .item{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        padding: 0;
+        margin: 0;
+        background: $color-white;
+        img{
+            border-radius: 50%;
+        width: 100%;
+        height: 100%;
+      
+        }
+    }
+    .tab-content{
+        width: 100%;
+    background: #fff;
+margin-top: 40px;
+.tab-pane{
+    width: 80%;
+    margin: auto;
+    color: $color-black;
+}
+
+    }
+    .nav-pills{
+        // background: $color-main;
+        border-radius: 40px 0 0 40px;
+        margin-right: 0px;
+        .nav-link{
+            padding: 20px;
+            background: $color-main;
+            border-radius: 0;
+            text-align: right;
+            position: relative;
+            color: $color-white;
+            .bi{
+                position: absolute;
+                top: 8px;
+                right: -1px;
+                width: 55px;
+                height: 59px;
+            
+background: transparent;
+
+border-radius: 50%;
+display: grid;
+place-items: center;
+font-size: 24px;
+
+            }
+            h4{
+                margin-right: 30px;
+
+            }
+            &:first-of-type{
+                border-radius:40px 0 0 0 ;
+
+            }
+
+            &.active, .nav-pills .show>.nav-link {
+                border-radius: 0 40px 40px 0;
+                color: #cd6b5a;
+                background-color: #fff;
+                position: relative;
+                padding: 40px 0;
+                font-weight: 600;
+                .bi{
+                               
+background: #FFF;
+top: 25px;
+right: -26px;
+                }
+            }
+            &.active::after{
+                content: "";
+                background-color: #CD6B5A;
+                border-radius: 40px 0 0;
+                width: 100%;
+                height: 30px;
+                position: absolute;
+                bottom: -5px;
+                z-index: 0000;
+                right: 0;
+            }
+            &.active::before{
+                content: "";
+                background-color: #CD6B5A;
+                border-radius: 0 0 0 40px;
+                width: 100%;
+                height: 30px;
+                position: absolute;
+                top: -5px;
+                z-index: 0000;
+                right: 0;
+            }
+        }
+    } 
+    .full-page{
+        border-radius: 40px;
+    }
+}
