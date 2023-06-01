@@ -42,19 +42,38 @@
         width: 100%;
     background: #fff;
 margin-top: 40px;
+margin-bottom: 40px;
+border-radius: 40px;
 .tab-pane{
-    width: 80%;
+    color: #707070;
+    font-size: 18px;
+    line-height: 1.8;
+    .publiah-dar{
+        width: 70%;
     margin: auto;
-    color: $color-black;
+
+    }
+    .header{
+ h4{
+        color: $color-main;
+        font-weight: 600;
+    }
+    img{
+        width: 220px;
+    }
+    }
+   
 }
 
     }
     .nav-pills{
-        // background: $color-main;
+        margin-left: 10px;
+        background: $color-main;
         border-radius: 40px 0 0 40px;
         margin-right: 0px;
+        height: 100%;
         .nav-link{
-            padding: 20px;
+            padding: 20px 5px;
             background: $color-main;
             border-radius: 0;
             text-align: right;
@@ -76,7 +95,7 @@ font-size: 24px;
 
             }
             h4{
-                margin-right: 30px;
+                margin-right: 40px;
 
             }
             &:first-of-type{
@@ -96,6 +115,12 @@ font-size: 24px;
 background: #FFF;
 top: 25px;
 right: -26px;
+                }
+              h4 {
+                    margin-right: 30px;
+                }
+                @include lg{
+                    padding: 25.5px 0;
                 }
             }
             &.active::after{
@@ -121,8 +146,132 @@ right: -26px;
                 right: 0;
             }
         }
+      
     } 
     .full-page{
         border-radius: 40px;
     }
+    .btn-download{
+        background: $color-main;
+        color: $color-white;
+        width: 400px;
+        max-width: 100%;
+        display: inline-block;
+        margin-top: 20px ;
+        padding: 4px 0;
+        border-radius: 40px;
+        font-size: 20px;
+        .bi{
+            font-size: 24px;
+        }
+    }
+    .store{
+            max-height: 650px;
+            overflow: hidden;
+            overflow-y: auto;
+            width: 95%;
+            margin: auto;
+            padding-right: 20px;
+          .sec-store{
+            
+            direction: rtl;
+            img{
+                height: 300px;
+            }
+            h5{
+                padding: 15px 0;
+
+                a{
+                    font-weight: 600;
+                    color: $color-black;
+                }
+            }
+           
+          }
+          &::-webkit-scrollbar-thumb {
+            background:$color-main;
+            border-radius: 12px;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background:$color-main;
+
+          }
+          &::-webkit-scrollbar-track {
+            background:hsla(18, 61%, 65%, 0.43);
+            border-radius: 12px;
+            box-shadow: inset 7px 10px 12px transparent;
+          }
+          &::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+          }
+        
+    }
+}
+
+@include md{
+    .single-publish{
+    .nav-pills{
+        width: 100%;
+        align-items: flex-start;
+        .nav-link{
+            padding-right: 0 !important;
+            &.active{
+                padding: 0;
+            }
+            &.active::after ,
+                &.active::before {
+                    display: none;
+            }
+            &.active, .nav-pills .show>.nav-link {
+                border-radius: 50%;
+               
+                .bi{    
+                    position: relative; 
+top: 0;
+right: 0;
+width: 50px;
+height: 25px;
+margin-top: 12px;
+margin-bottom: 12px;
+                }}
+            h4{
+                display: none;
+            }
+            .bi{
+                z-index: 111;
+                top: 0 !important;
+                right: 0 !important;
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+   
+  .item {
+        width: 50px;
+        height: 50px;}
+        .tab-content .tab-pane .publiah-dar {
+            width: 95%;
+        }
+}
+
+
+}
+@include sm{
+    .single-publish .nav-pills .nav-link .bi {
+        width: 35px;
+        height: 35px;
+    }
+      
+        &.active, .nav-pills .show>.nav-link {
+            .bi{    
+                width: 39px;
+                font-size: 22px;
+                height: 19px;
+                margin-top: 9px;
+                margin-bottom: 12px;
+            }
+        }
+            
 }

@@ -1076,21 +1076,40 @@ section {
   width: 100%;
   background: #fff;
   margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 40px;
 }
 
 .single-publish .tab-content .tab-pane {
-  width: 80%;
+  color: #707070;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.single-publish .tab-content .tab-pane .publiah-dar {
+  width: 70%;
   margin: auto;
-  color: #000;
+}
+
+.single-publish .tab-content .tab-pane .header h4 {
+  color: #CD6B5A;
+  font-weight: 600;
+}
+
+.single-publish .tab-content .tab-pane .header img {
+  width: 220px;
 }
 
 .single-publish .nav-pills {
+  margin-left: 10px;
+  background: #CD6B5A;
   border-radius: 40px 0 0 40px;
   margin-right: 0px;
+  height: 100%;
 }
 
 .single-publish .nav-pills .nav-link {
-  padding: 20px;
+  padding: 20px 5px;
   background: #CD6B5A;
   border-radius: 0;
   text-align: right;
@@ -1113,7 +1132,7 @@ section {
 }
 
 .single-publish .nav-pills .nav-link h4 {
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .single-publish .nav-pills .nav-link:first-of-type {
@@ -1133,6 +1152,16 @@ section {
   background: #FFF;
   top: 25px;
   right: -26px;
+}
+
+.single-publish .nav-pills .nav-link.active h4, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link h4 {
+  margin-right: 30px;
+}
+
+@media (max-width: 1200px) {
+  .single-publish .nav-pills .nav-link.active, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link {
+    padding: 25.5px 0;
+  }
 }
 
 .single-publish .nav-pills .nav-link.active::after {
@@ -1161,6 +1190,130 @@ section {
 
 .single-publish .full-page {
   border-radius: 40px;
+}
+
+.single-publish .btn-download {
+  background: #CD6B5A;
+  color: #fff;
+  width: 400px;
+  max-width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 4px 0;
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+.single-publish .btn-download .bi {
+  font-size: 24px;
+}
+
+.single-publish .store {
+  max-height: 650px;
+  overflow: hidden;
+  overflow-y: auto;
+  width: 95%;
+  margin: auto;
+  padding-right: 20px;
+}
+
+.single-publish .store .sec-store {
+  direction: rtl;
+}
+
+.single-publish .store .sec-store img {
+  height: 300px;
+}
+
+.single-publish .store .sec-store h5 {
+  padding: 15px 0;
+}
+
+.single-publish .store .sec-store h5 a {
+  font-weight: 600;
+  color: #000;
+}
+
+.single-publish .store::-webkit-scrollbar-thumb {
+  background: #CD6B5A;
+  border-radius: 12px;
+}
+
+.single-publish .store::-webkit-scrollbar-thumb:hover {
+  background: #CD6B5A;
+}
+
+.single-publish .store::-webkit-scrollbar-track {
+  background: rgba(220, 144, 111, 0.43);
+  border-radius: 12px;
+  -webkit-box-shadow: inset 7px 10px 12px transparent;
+          box-shadow: inset 7px 10px 12px transparent;
+}
+
+.single-publish .store::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 991.8px) {
+  .single-publish .nav-pills {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .single-publish .nav-pills .nav-link {
+    padding-right: 0 !important;
+  }
+  .single-publish .nav-pills .nav-link.active {
+    padding: 0;
+  }
+  .single-publish .nav-pills .nav-link.active::after, .single-publish .nav-pills .nav-link.active::before {
+    display: none;
+  }
+  .single-publish .nav-pills .nav-link.active, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link {
+    border-radius: 50%;
+  }
+  .single-publish .nav-pills .nav-link.active .bi, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link .bi {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 25px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .single-publish .nav-pills .nav-link h4 {
+    display: none;
+  }
+  .single-publish .nav-pills .nav-link .bi {
+    z-index: 111;
+    top: 0 !important;
+    right: 0 !important;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .single-publish .item {
+    width: 50px;
+    height: 50px;
+  }
+  .single-publish .tab-content .tab-pane .publiah-dar {
+    width: 95%;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-publish .nav-pills .nav-link .bi {
+    width: 35px;
+    height: 35px;
+  }
+  .active .bi, .nav-pills .show > .nav-link .bi {
+    width: 39px;
+    font-size: 22px;
+    height: 19px;
+    margin-top: 9px;
+    margin-bottom: 12px;
+  }
 }
 
 .navbar {
