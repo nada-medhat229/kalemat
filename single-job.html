@@ -274,13 +274,13 @@
 
 
     <div class="modal fade" id="jobModal"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-4" id="jobModalLabel">تقدم على الوظيفة</h1>
           </div>
           <div class="modal-body">
-            <div class="row gy-4 mt-2 mb-4">
+            <div class="row gy-4 mt-2 mt-md-3 mb-4 mb-md-5">
               <div class="col-lg-6 col-12">
                 <input type="text" class="form-control" placeholder="الاسم">
               </div>
@@ -303,8 +303,13 @@
                 <input type="text" class="form-control" placeholder="المدينة">
               </div>
               <div class="col-lg-6 col-12">
-                <input type="file" class="form-control" placeholder="قم بتحميل السيرة الذاتية الخاصة بك">
-              </div>
+                <div id='file-input'>
+                  <input type='file' accept=".pdf,.doc,.docx,.txt">
+                  <span class='button'>
+                    <i class="bi bi-paperclip"></i>
+                  </span>
+                  <span class='label' data-js-label>قم بتحميل السيرة الذاتية الخاصة بك</label>
+                </div>
             </div>
           </div>
           <div class="modal-footer border-0">

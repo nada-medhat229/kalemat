@@ -1,6 +1,6 @@
 #jobModal{
     .modal-content {
-        background: #FFFFFF 0% 0% no-repeat padding-box;
+        background: $color-white;
         border-radius: 78px;
         padding: 3rem 2rem;
         .modal-header {
@@ -28,12 +28,55 @@
             color: $color-white;
             border-radius: 45px;
             padding: 1rem .75rem ;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
         }
+        #file-input {
+            display: inline-block;
+            background: $color-gray-bg;
+            border-radius: 14px;
+            padding: 14px 1.3rem;
+            position: relative;
+            width: 100%;
+            & > [type='file'] {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              z-index: 10;
+              cursor: pointer;
+            }
+            & > .button {
+              display: inline-block;
+              cursor: pointer;
+              margin-left: 5px;
+              color: $color-muted;
+            }
+            & > .label {
+              color: $color-muted;
+            } 
+        }
+          
+          
+          
     }
 }
 @media (min-width: 576px){
     .modal-dialog {
         max-width: 80%;
+    }
+}
+@include md{
+    #jobModal{
+        .modal-content {
+            border-radius: 18px !important;
+            padding:  2rem !important;
+            .apply-btn {
+                width: 100%;
+                padding: 0.5rem 0.75rem;
+                margin-bottom: 0rem;
+            }
+        }
     }
 }

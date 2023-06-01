@@ -1,0 +1,258 @@
+.filter{
+    background-color: $color-white;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    .container{
+        .filter-wrapper{
+            display: flex;
+            justify-content: space-between;
+            .title{
+                color: $color-main;
+            }
+            .filter-btn{
+                @include centralized(8px);
+                font-weight: bold;
+                font-size: large;
+                background: transparent;
+            }
+        }
+    }
+}
+
+#bookFilter{
+    .offcanvas-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 0 1rem;
+        .btn-close {
+            position: absolute;
+            background: $color-white;
+            border-radius: 50% !important;
+            left: 0;
+            transform: translateX(-50%);
+            opacity: 1;
+            box-shadow: 0px 0px 25px #00000029;
+            @include centralized;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            color: $color-main;
+        }
+        .offcanvas-title {
+            font-weight: 700;
+            font-size: 22px;
+        }
+    }
+    .offcanvas-body{
+        .Stars {
+            font-size: 25px;
+        }
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23CD6B5A'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+        }
+        .search{
+            background: $color-white;
+            border: 1px solid #C1C1C1;
+            border-radius: 50px;
+            padding: .5rem 1.5rem;
+            margin-bottom: 1.5rem;
+            .search-wrapper{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .nice-select{
+                    border: none;
+                    background-color: transparent;
+                }
+                .form-control{
+                    background: transparent;
+                    border: none !important;
+                    padding: 4px 10px;
+                    &:focus{
+                        border: none;
+                        box-shadow: unset;
+                    }
+                }
+                .input-group-text{
+                    background: transparent;
+                    border: none !important;
+                    color: $color-main;
+                    padding: 0;
+                }
+            }
+    
+        }
+    }
+}
+
+.grid-books{
+    .book-item{
+        background: $color-white;
+        padding: 1.5rem;
+        border-radius: 26px;
+        position: relative;
+        .book-cover{
+            box-shadow: 0px 0px 25px #A4A4A429;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 370px;
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .book-name{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            
+            h5{
+                font-weight: 700;
+            }
+
+            .fav,.book-op{
+                @include centralized;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 0px 15px #00000029;
+                color: #707070;
+                position: relative;
+                z-index: 1;
+            }
+            .fav.added {
+                color: #FF0000 !important;
+                
+            }
+        }
+    }
+    .pagination{
+        margin-top: 3rem;
+    }
+
+    // single
+    .book-details{
+        .book-item{
+            background-color: transparent;
+            padding: 0;
+            .title{
+                .diamond {
+                    display: flex;
+                    gap: 8px;
+                    color: #CD6B5A;
+                    justify-content: center;
+                    position: relative;
+                    margin: .5rem 0;
+                    i {
+                        font-size: 14px;
+                    }
+                    &::after{
+                        content: "";
+                        width: 100%;
+                        background-color: $color-main;
+                        height: 1px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 23;
+                    }
+                }
+            }
+            .book-cover{
+                min-height: 500px;
+                position: relative;
+                height: 100%;
+            }
+            .book-name{
+                align-items: flex-start;
+                margin-top: 0;
+            }
+            .add-to-fav{
+                @include centralized(8px);
+                color: $color-text;
+            }
+            .book-info{
+                li{
+                    margin-bottom: 1rem;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        box-shadow: 0px 0px 20px #00000029;
+                    }
+                    .info-head{
+                        color: $color-main;
+                        font-weight: bold;
+                        padding: 0 .25rem;
+                    }
+                    a{
+                        text-decoration: underline;
+                        color: #4E4E4E;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+            .book-preview{
+                margin-top: 2.5rem;
+                .title{
+                    width: fit-content;
+                }
+                .descrebtion{
+                    color: #707070;
+                    margin: .65rem 0 1.25rem 0;
+                }
+            }
+            .book-option{
+                 @include centralized(8px);
+                .call-for-book{
+                    flex-grow: 2;
+                    background: $color-main;
+                    border-radius: 45px;
+                    padding: .75rem 0;
+                    color: $color-white;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .add-to-fav{
+                    background-color: transparent;
+                    flex-grow: 1;
+                }
+            }
+         }
+    }
+}
+
+
+
+@include md{
+    .grid-books{
+        .book-item {
+            .book-cover {
+                height: 330px;
+            }
+        }
+    } 
+}
+@include sm{
+    #bookFilter{
+        .offcanvas-header{
+           .btn-close {
+              left: 6%;
+              transform: unset;
+           }
+        }
+    }
+    .grid-books{
+        .book-item {
+            .book-cover {
+                height: 280px;
+            }
+        }
+    } 
+}

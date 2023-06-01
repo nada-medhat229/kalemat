@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500;600;700;800;900&display=swap');
+
 * {
   font-family: 'Tajawal', sans-serif;
   margin: 0;
@@ -64,6 +65,53 @@ img{
   width: 200px;
   height: 45px;
 }
+.offcanvas.offcanvas-start {
+  left: unset;
+  right: 0;
+}
+.offcanvas.offcanvas-start {
+  transform: translateX(100%);
+}
+.accordion-item {
+  border: none;
+  .accordion-button{
+    font-weight: 700;
+    color: $color-text; 
+    &:not(.collapsed) {
+      box-shadow: unset;
+      background-color: transparent;
+    }
+    &::after {
+      margin-right: auto;
+      margin-left: unset;
+    }
+    &:focus {
+      border-color: none;
+      box-shadow: unset; 
+    }
+  }
+}
+.form-check {
+  padding-left: unset;
+  padding-right: 1.5em;
+  margin: .5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .form-check-input {
+    float: right;
+    margin-right: -1.5em;
+    margin-left: unset;
+    border-color: #808080 !important;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .form-check-input:checked {
+    background-color: $color-main;
+    border-color: $color-main !important;
+  }
+}
 .dropdown-menu[data-bs-popper] {
   right: 50%;
   transform: translateX(50%);
@@ -100,8 +148,18 @@ img{
 .form-select:focus {
   box-shadow: none !important;
 }
+.form-control:focus {
+  box-shadow: none;
+}
+.form-control::placeholder{
+  color: $color-muted;
+}
 section{
   margin-top: 80px;
+}
+.Stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  font-size: 30px;
 }
 .Stars::before {
   content: "★★★★★";
