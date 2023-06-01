@@ -37,10 +37,7 @@
         color: #4E4E4E;
         font-weight: 600;
     }
-    .Stars {
-        --percent: calc(var(--rating) / 5 * 100%);
-        font-size: 30px;
-    }
+    
     p {
         color: #707070;
         .qout-open {

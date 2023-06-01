@@ -118,6 +118,23 @@ $(document).ready(function () {
       rtl:true
     });
   });
+
+  $('#file-input').change(function(){
+    const fileInput = $(this).find('[type="file"]')[0];
+    const label = $(this).find('[data-js-label]')[0];
+    console.log($(fileInput).val());
+    if (!$(fileInput).val()) return
+      var value = $(fileInput).val().replace(/^.*[\\\/]/, '')
+      $(label).html(value)
+  })
+
+  $(".fav").click(function () {
+    $(this).toggleClass("added");
+    $(this).toggleClass("bi-heart bi-heart-fill");
+    console.log(this)
+})
+
+
   $('select').niceSelect();
 
   // wow.js init
