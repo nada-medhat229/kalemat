@@ -1,29 +1,29 @@
 $(document).ready(function () {
   // loading
- 
   setTimeout(function () {
     $("#loading").fadeOut();
   }, 3000);
+
+  // header vedio
   $(".play-icon").click(function(){
     document.querySelector(".header-video video").play();
     $(this).addClass("d-none");
     $(".pause-icon").removeClass("d-none");
     $('.video-cover-img').fadeOut(2000);
   })
- 
   $(".pause-icon").click(function(){
     document.querySelector(".header-video video").pause();
     $(this).addClass("d-none");
     $(".play-icon").removeClass("d-none");
     $('.video-cover-img').fadeIn(2000);
   })
-
   $('video').on('ended',function(){ 
     $('.video-cover-img').fadeIn(2000);
     $('.pause-icon').addClass("d-none");
     $(".play-icon").removeClass("d-none");
   });
 
+  // owl-carousel
   $('.partners-slider .owl-carousel').owlCarousel({
     loop:false,
     margin:20,
@@ -46,7 +46,26 @@ $(document).ready(function () {
         }
     }
   });
-
+  $('.grid-books .owl-carousel').owlCarousel({
+    loop:false,
+    nav: true,
+    margin:20,
+    responsiveClass:true,
+    rtl:true,
+    autoplay:true,
+    autoplayTimeout:20000,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }
+  });
   $(".single_book_single .owl-carousel").owlCarousel({
     items: 2,
     rtl: true,
@@ -69,7 +88,6 @@ $(document).ready(function () {
 
     },
   });
-  
   $(".most_recent .owl-carousel").owlCarousel({
     items: 2,
     rtl: true,
@@ -98,6 +116,8 @@ $(document).ready(function () {
       }
     },
   });
+
+  // home counter
   $('.count').each(function () {
     $(this).prop('Counter',0).animate({
         Counter: $(this).text()
@@ -109,16 +129,20 @@ $(document).ready(function () {
         }
     });
   });
+
+  // rateyo
   $(function () {
-    $(".Star-rate").rateYo({
-      starWidth: "15px",
-      ratedFill: "#FFC107",
-      readOnly: true,
-      normalFill: "#eee",
-      rtl:true
+    $(".your-comment #rateYo").rateYo({
+      starWidth: "20px",
+      ratedFill: "#FFD500",
+      normalFill: "#A7A7A7",
+      rtl:true,
+      halfStar: false,
+      starSvg:'<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/> </svg>'
     });
   });
 
+  // apply job upload cv
   $('#file-input').change(function(){
     const fileInput = $(this).find('[type="file"]')[0];
     const label = $(this).find('[data-js-label]')[0];
@@ -128,13 +152,26 @@ $(document).ready(function () {
       $(label).html(value)
   })
 
+  // textarea
+  var $txtArea = $('textarea');
+    $txtArea.on('keyup', countChar);
+    function countChar() {
+      var id =$(this).attr("id") ;
+      var chars = $(this).next();
+      var textMax = $(this).attr('maxlength');
+      var textLength = $(this).val().length;
+      var textRemaining = textLength;
+      chars.html(textMax + ' /' + textRemaining);
+    };
+
+  // toggle fav item
   $(".fav").click(function () {
     $(this).toggleClass("added");
     $(this).toggleClass("bi-heart bi-heart-fill");
     console.log(this)
 })
 
-
+  // niceSelect
   $('select').niceSelect();
 
   // wow.js init

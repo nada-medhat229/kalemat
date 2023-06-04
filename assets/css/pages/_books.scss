@@ -1,3 +1,8 @@
+.head-title{
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
 .filter{
     background-color: $color-white;
     margin: 2rem 0;
@@ -107,6 +112,7 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 1rem;
+            flex-wrap: wrap;
             
             h5{
                 font-weight: 700;
@@ -165,7 +171,13 @@
             .book-cover{
                 min-height: 500px;
                 position: relative;
-                height: 100%;
+                height: calc(100% - 35.5px);
+            }
+            .date{
+                font-size: small;
+                font-weight: bold;
+                color: $color-text;
+                padding: .5rem 0;
             }
             .book-name{
                 align-items: flex-start;
@@ -210,6 +222,7 @@
             }
             .book-option{
                  @include centralized(8px);
+                 flex-wrap: wrap;
                 .call-for-book{
                     flex-grow: 2;
                     background: $color-main;
@@ -228,6 +241,129 @@
     }
 }
 
+.grid-books.related{
+    background-color: $color-white;
+    padding-bottom: 4rem;
+    .book-item{
+        background: $color-gray-bg;
+    }
+    .owl-nav {
+        position: absolute;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        display: flex !important;
+        bottom: -8.5%;
+        transform: translate(50%, 100%);
+        margin: auto;
+        right: 50%;
+        button.owl-prev,button.owl-next {
+            position: relative;
+            font-size: 25px;
+            color: #fff;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            padding: 3px;
+            background-color: #f4e5de;
+            color: #CD6B5A;
+            }
+        }
+        .owl-next {
+            margin-right: 50px;
+        }
+        button::after {
+            position: absolute;
+            padding: 5px;
+            content: "";
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            color: #fff;
+            border: 1px dashed #CD6B5A;
+        }
+    }
+    .owl-nav.disabled {
+        display: none !important;
+    }
+}
+.grid-books.same-author{
+    padding-top: 2rem;
+}
+.grid-books.watched{
+    .book-item{
+        margin-bottom: 1rem;
+    }
+
+}
+.rate-wrapper{
+    @include centralized(15px);
+    align-items: flex-start;
+}
+.rate{
+    line-height: 2;
+    .bi{
+        color: #FFD500;
+    }
+}
+
+.comments{
+    .comments-wrapper{
+        .comment{
+            padding: 1.5rem 0;
+            @include centralized(10px);
+            align-items: flex-start;
+            .user-img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            .comm-info{
+                @include centralized(5px 10px);
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                .date{
+                    color: #757575;
+                    font-size: small;
+                }
+            }
+            .comment-text{
+                color: $color-text;
+                font-weight: 500;
+                margin-top: 0.5rem;
+            }
+            &:not(:last-child){
+                border-bottom: 1px solid #e0e0e0;
+            }
+        }
+    }
+    .your-comment{
+        textarea {
+            background-color: $color-white;
+            border: 1px solid#DEDEDE !important;
+            border-radius: 15px !important;
+            padding: 15px;
+            font-size: 15px;
+            margin-top: .5rem;
+            &:focus{
+                border-color: #DEDEDE !important;
+            }
+        }
+        button{
+            background: $color-main;
+            color: $color-white;
+            margin-top: 1.25rem;
+            border-radius: 54px;
+            padding: .5rem 2rem;
+        }
+           
+    }
+}
 
 
 @include md{
@@ -235,6 +371,14 @@
         .book-item {
             .book-cover {
                 height: 330px;
+            }
+        }
+        .book-details {
+            .book-item {
+                .book-cover {
+                    min-height: 400px;
+                    height: 404px;
+                }
             }
         }
     } 
@@ -255,4 +399,12 @@
             }
         }
     } 
+    .book-option{
+        @include centralized(8px);
+        flex-wrap: wrap;
+       .call-for-book{
+           width: 100%;
+           margin-bottom: 1rem;
+       }
+   }
 }

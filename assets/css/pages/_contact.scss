@@ -1,0 +1,128 @@
+.contactUs{
+    .contact-data{
+        .social{
+            width:70%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: $color-white ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    color: $color-main;
+                    font-size: 20px;
+                 }
+             }
+         }
+        .data{
+            background: $color-main;
+            border-radius: 0px 20px 20px 0px;
+            color: $color-white;
+            p{
+                font-size: small;
+                opacity: .8;
+            }
+        }
+    } 
+    .contact-info{
+        a{
+           color: $color-white !important;
+           margin-right: 10px;
+           line-height: 20px;
+        }
+        ul li {
+           margin: 26px 0;
+           display: flex;
+           align-items: center;
+           i{
+              color: $color-white;
+              margin-left: 14px;
+              margin-top: 5px;
+              font-size: 25px;
+           }
+        }
+    }
+    /* form */
+    .contact-form{
+        box-shadow: -25px 25px 50px #4141410C;
+        border-radius: 20px;
+        background: $color-white;
+        label{
+           padding: 0px 20px;
+           font-weight: 500;
+           font-size: 14px;
+           margin-bottom: 10px;
+        }
+        .form-control{
+            border: 1px solid #ECECEC;
+            border-radius: 50px;
+           background-color: #fff ;
+           margin-bottom: 20px;
+           padding: .7rem;
+           &:focus{
+              border: 1px solid $color-main;
+           }
+           &::placeholder{
+              color: #E1E1E1;
+           }
+        }
+        .msg{
+            position: relative;
+            textarea.form-control{
+               border-radius: 20px;
+               &:focus{
+                border: 1px solid $color-main;
+             }
+            }
+            .textCount{
+                position: absolute;
+                color: #E1E1E1;
+                bottom: 5px;
+                left: 15px;
+            }
+        }
+        .contact-btn{
+            background: $color-main;
+            color:$color-white;
+            width: 65%;
+
+        }
+    }
+} 
+
+@include md{
+    .contactUs {
+        .contact-data{
+            .data {
+                margin: 0 4rem;
+                border-radius: 20px 20px 0px 0px;
+            }
+        }
+    }  
+}
+@include sm{
+    .contactUs {
+        .contact-data{
+            .data {
+                margin: 0 1.5rem;
+                .contact-info{
+                    margin-bottom: 0 !important;
+                }
+            }
+            .social {
+                width: 95%;
+                div{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }  
+}
+
+ 

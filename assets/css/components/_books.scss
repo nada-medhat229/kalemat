@@ -31,8 +31,10 @@
             h5{
                 a{
                     color: $color-white !important;
-                    display: inline-block;
-                    margin-top: 1rem;
+                    span{
+                        display: inline-block;
+                        margin-top: 1rem;
+                    }
                 }
             }
         }
