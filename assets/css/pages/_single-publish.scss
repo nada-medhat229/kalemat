@@ -119,9 +119,7 @@ right: -26px;
               h4 {
                     margin-right: 30px;
                 }
-                @include lg{
-                    padding: 25.5px 0;
-                }
+               
             }
             &.active::after{
                 content: "";
@@ -176,7 +174,9 @@ right: -26px;
             
             direction: rtl;
             img{
-                height: 300px;
+                max-height: 300px;
+                border-radius: 12px;
+                height: 250px;
             }
             h5{
                 padding: 15px 0;
@@ -263,7 +263,7 @@ margin-bottom: 12px;
         width: 35px;
         height: 35px;
     }
-      
+    .nav-link{
         &.active, .nav-pills .show>.nav-link {
             .bi{    
                 width: 39px;
@@ -273,5 +273,23 @@ margin-bottom: 12px;
                 margin-bottom: 12px;
             }
         }
-            
+    }  
+}
+@include xs{
+    .single-publish .nav-pills .nav-link{
+        &.active .bi, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link .bi {
+      
+            width: 40px;
+            height: 20px;
+            margin-top: 8px;
+        }
+        .item {
+            width: 40px;
+            height: 40px;
+        }
+        .bi {
+      
+            margin-top: 5px;
+        }
+    }
 }
