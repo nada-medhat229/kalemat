@@ -35,16 +35,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
     />
-
+    <!-- reteYo -->
+    <link rel="stylesheet" href="./assets/css/plugin/jquery.rateyo.min.css">
     <!-- nice select link -->
     <link rel="stylesheet" href="/assets/css/plugin/nice-select.css" />
-
+    <!-- owl carousel -->
     <link rel="stylesheet" href="/assets/css/plugin/owl.carousel.min.css" />
     <link
       rel="stylesheet"
       href="/assets/css/plugin/owl.theme.default.min.css"
     />
-
     <!-- animate link -->
     <link rel="stylesheet" href="./assets/css/plugin/animate.css" />
     <link
@@ -161,24 +161,31 @@
     <div class="grid-books">
       <div class="book-details py-5">
         <div class="container">
-          <div class="book-item row">
-            <div class="col-12 col-md-5">
+          <div class="book-item row gy-3">
+            <div class="col-12 col-lg-5 wow animate__backInRight" data-wow-duration="2s" data-wow-delay=".5s">
                 <div class="book-cover">
                   <img src="assets/images/Group 427319511.png" alt="">
                 </div>
                 <div class="date">
                   تاريخ الإصدار
+                  <span>24/5/2023</span>
                 </div>
             </div>
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-lg-7 wow animate__backInLeft" data-wow-duration="2s" data-wow-delay=".5s">
                 <div class="cart-product-item bg-transparent">
                   <div class="book-name mb-3">
-                    <div class="title">
-                      <h1 class="fw-bold fs-4">كتاب الحياة والموت</h1>
-                      <div class="diamond ">
-                        <i class="bi bi-diamond-fill px-1"></i>
-                        <i class="bi bi-diamond-fill px-1"></i>
-                        <i class="bi bi-diamond-fill px-1"></i>
+                    <div class="rate-wrapper">
+                      <div class="title">
+                        <h1 class="fw-bold fs-4">كتاب الحياة والموت</h1>
+                        <div class="diamond ">
+                          <i class="bi bi-diamond-fill px-1"></i>
+                          <i class="bi bi-diamond-fill px-1"></i>
+                          <i class="bi bi-diamond-fill px-1"></i>
+                        </div>
+                      </div>
+                      <div class="rate">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="rate-value">4<span>/5</span></span>
                       </div>
                     </div>
                     <div class="book-name add-to-fav">
@@ -192,7 +199,7 @@
                       <li>
                           <img src="/assets/images/writer2.jpg" alt="">
                           <span class="info-head">نوع الكتاب: </span>
-                          <a href="authors.html">جيمس جويس</a>
+                          <a href="author-details.html">جيمس جويس</a>
                       </li>
                       <li>
                         <img src="/assets/images/pub.png" alt="">
@@ -235,7 +242,240 @@
       </div>
     </div>
 
+    <!-- ======= Related books section ======= -->
+    <section class="related grid-books mt-0">
+      <div class="container">
+        <h5 class="head-title">كتب ذات صلة</h5>
+        <div class="owl-carousel">
+          <div class="book-item wow animate__fadeInUpBig" data-wow-delay="0s">
+            <a class="router-link" href="single-book.html">
+            </a>
+            <div class="book-cover">
+              <img src="assets/images/Group 427319511.png" alt="">
+            </div>
+            <div class="book-name">
+              <h5>عن العيش والموت</h5>
+              <div class="">
+                <i class="fav bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="book-item wow animate__fadeInUpBig" data-wow-delay="0.2s">
+            <a class="router-link" href="single-book.html">
+            </a>
+            <div class="book-cover">
+              <img src="assets/images/Group 427319511.png" alt="">
+            </div>
+            <div class="book-name">
+              <h5>عن العيش والموت</h5>
+              <div class="">
+                <i class="fav bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="book-item wow animate__fadeInUpBig" data-wow-delay="0.4s">
+            <a class="router-link" href="single-book.html">
+            </a>
+            <div class="book-cover">
+              <img src="assets/images/Group 427319511.png" alt="">
+            </div>
+            <div class="book-name">
+              <h5>عن العيش والموت</h5>
+              <div class="">
+                <i class="fav bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="book-item wow animate__fadeInUpBig" data-wow-delay="0.6s">
+            <a class="router-link" href="single-book.html">
+            </a>
+            <div class="book-cover">
+              <img src="assets/images/Group 427319511.png" alt="">
+            </div>
+            <div class="book-name">
+              <h5>عن العيش والموت</h5>
+              <div class="">
+                <i class="fav bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+
+    <!-- ======= Written by the same author section ======= -->
+    <section class="same-author grid-books mt-0 wow animate__fadeInUpBig">
+      <div class="container">
+        <h5 class="head-title">كتب لنفس الكاتب</h5>
+        <div class="row gy-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="book-item wow animate__fadeInDownBig" data-wow-delay="0s">
+              <a class="router-link" href="single-book.html">
+              </a>
+              <div class="book-cover">
+                <img src="assets/images/Group 427319511.png" alt="">
+              </div>
+              <div class="book-name">
+                <h5>عن العيش والموت</h5>
+                <div class="">
+                  <i class="fav bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="book-item wow animate__fadeInDownBig" data-wow-delay="0.2s">
+              <a class="router-link" href="single-book.html">
+              </a>
+              <div class="book-cover">
+                <img src="assets/images/Group 427319511.png" alt="">
+              </div>
+              <div class="book-name">
+                <h5>عن العيش والموت</h5>
+                <div class="">
+                  <i class="fav bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="book-item wow animate__fadeInDownBig" data-wow-delay="0.4s">
+              <a class="router-link" href="single-book.html">
+              </a>
+              <div class="book-cover">
+                <img src="assets/images/Group 427319511.png" alt="">
+              </div>
+              <div class="book-name">
+                <h5>عن العيش والموت</h5>
+                <div class="">
+                  <i class="fav bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= comment section ======= -->
+    <section class="comments">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h5 class="head-title">التقييمات</h5>
+            <ul class="comments-wrapper">
+              <li class="comment wow animate__fadeInTopRight" data-wow-delay="0s">
+                <img src="./assets/images/writer2.jpg" alt="" class="user-img">
+                <div>
+                  <div class="comm-info">
+                    <h6 class="name fw-bold">عبدالله صالح</h6>
+                    <div class="date">14 فبراير 2023 في 15:35</div>
+                    <div class="rate">
+                      <i class="bi bi-star-fill"></i>
+                      <span class="rate-value">4<span>/5</span></span>
+                    </div>
+                  </div>
+                  <div class="comment-text">
+                    <p>
+                      عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصوعند موافقه العميل المبدئيه
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="comment wow animate__fadeInTopRight" data-wow-delay="0.2s">
+                <img src="./assets/images/writer2.jpg" alt="" class="user-img">
+                <div>
+                  <div class="comm-info">
+                    <h6 class="name fw-bold">عبدالله صالح</h6>
+                    <div class="date">14 فبراير 2023 في 15:35</div>
+                    <div class="rate">
+                      <i class="bi bi-star-fill"></i>
+                      <span class="rate-value">4<span>/5</span></span>
+                    </div>
+                  </div>
+                  <div class="comment-text">
+                    <p>
+                      عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصوعند موافقه العميل المبدئيه
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="comment wow animate__fadeInTopRight" data-wow-delay="0.4s">
+                <img src="./assets/images/writer2.jpg" alt="" class="user-img">
+                <div>
+                  <div class="comm-info">
+                    <h6 class="name fw-bold">عبدالله صالح</h6>
+                    <div class="date">14 فبراير 2023 في 15:35</div>
+                    <div class="rate">
+                      <i class="bi bi-star-fill"></i>
+                      <span class="rate-value">4<span>/5</span></span>
+                    </div>
+                  </div>
+                  <div class="comment-text">
+                    <p>
+                      عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصوعند موافقه العميل المبدئيه
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="your-comment">
+              <div class="d-flex align-items-center mb-2">
+                <span class="fw-semibold">أضف تقييمك</span>
+                <div id="rateYo" class="mx-2" rateYo="3"></div>
+              </div>
+              <form action="">
+                <textarea class="form-control" name="comment" rows="5"></textarea>
+                <button type="submit">
+                  ارسال تقييمك
+                </button>
+              </form>
+
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="head-title">القُرّاء شاهدوا أيضًا</h5>
+            <div class="watched grid-books mt-0 pb-5 wow animate__fadeInUpBig">
+              <div class="row">
+                <div class="col-lg-12 col-md-6 col-12">
+                  <div class="book-item">
+                    <a class="router-link" href="single-book.html">
+                    </a>
+                    <div class="book-cover">
+                      <img src="assets/images/Group 427319511.png" alt="">
+                    </div>
+                    <div class="book-name">
+                      <h5>عن العيش والموت</h5>
+                      <div class="">
+                        <i class="fav bi bi-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6 col-12">  
+                  <div class="book-item">
+                    <a class="router-link" href="single-book.html">
+                    </a>
+                    <div class="book-cover">
+                      <img src="assets/images/Group 427319511.png" alt="">
+                    </div>
+                    <div class="book-name">
+                      <h5>عن العيش والموت</h5>
+                      <div class="">
+                        <i class="fav bi bi-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
     <!-- ======= footer ======= -->
     <footer class="py-5">
       <div class="container">
@@ -376,13 +616,10 @@
     <script src="/assets/js/plugin/jquery.nice-select.min.js"></script>
     <!-- owl carousel script -->
     <script src="/assets/js/plugin/owl.carousel.min.js"></script>
-    <!-- purecount -->
+    <!-- rateyo -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.4/jquery.rateyo.min.js"
-      integrity="sha512-09bUVOnphTvb854qSgkpY/UGKLW9w7ISXGrN0FR/QdXTkjs0D+EfMFMTB+CGiIYvBoFXexYwGUD5FD8xVU89mw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    src="./assets/js/plugin/jquery.rateyo.min.js"></script>
+    <!-- purecount -->
     <script src="/assets/js/plugin/PureCounter.js"></script>
     <script src="/assets/js/script.js"></script>
   </body>
