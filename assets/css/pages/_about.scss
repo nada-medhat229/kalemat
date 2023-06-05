@@ -1,0 +1,144 @@
+// .aboutUs{
+// }
+.title{
+    color: $color-title;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+$content-width: 450px;
+.timeline{  
+    .diamond {
+        display: flex;
+        width: 70%;
+        gap: 8px;
+        color: #CD6B5A;
+        justify-content: center;
+        position: relative;
+        margin: .5rem auto;
+        i {
+            font-size: 14px;
+        }
+        &::after{
+            content: "";
+            width: 100%;
+            background-color: $color-main;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 23;
+        }
+    }
+  ul{
+    padding: 30px 0; 
+    padding-bottom: 130px;
+    li{
+        position: relative;
+        margin: 0 auto;
+        counter-increment: section;
+        list-style-type: none;
+        &:last-child{
+            padding-bottom: 7px;
+        }
+        .content-wrapper{
+           width: fit-content;
+           position: relative;
+           padding: 2rem 4rem 5rem 0;
+           &:before{
+            content: counter(section);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='126.734' height='118.816' viewBox='0 0 126.734 118.816'%3E%3Cdefs%3E%3Cfilter id='Path' x='0' y='0' width='126.734' height='118.816' filterUnits='userSpaceOnUse'%3E%3CfeOffset dy='5' input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='2.5' result='blur'/%3E%3CfeFlood flood-opacity='0.161'/%3E%3CfeComposite operator='in' in2='blur'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Cg transform='matrix(1, 0, 0, 1, 0, 0)' filter='url(%23Path)'%3E%3Cpath id='Path-2' data-name='Path' d='M-142.553,107.522c19.317-15.552,9.85-95.5-13.616-106.032s-83.137,37.29-79.687,64.154S-161.871,123.074-142.553,107.522Z' transform='translate(119.23 238.5) rotate(90)' fill='%23f0d2c4'/%3E%3C/g%3E%3C/svg%3E");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            right: -4px;
+            top: -5px;
+            transform: translateX(50%);
+            @include centralized;
+            width: 70px;
+            height: 70px;
+            color: $color-main;
+            font-size: 26px;
+           }
+           
+
+        }
+        .content{
+            position: relative;
+            top: 7px;
+            width: $content-width;              
+        }
+        &:nth-child(even) .content-wrapper{
+            border: 2px dashed $color-second;
+            border-right: unset;
+            &:before{
+                left: 4px;
+                right: unset;
+                top: 0px;
+                transform: translate(-50%, 30px);
+            }
+   
+        }
+        &:nth-child(odd) .content-wrapper{
+            border-right: 2px dashed $color-second;
+
+        }
+        &:last-child .content-wrapper{
+            padding-bottom: 10px;
+            padding-right: 5rem;
+            border-bottom: 2px dashed $color-second;
+            &:before{
+                top: 50%;
+                transform: translate(-18.2px, 26px);
+            }
+            .content{
+                padding: 0 2rem;
+                padding-top: 5rem;
+                background-color: 
+                $color-gray-bg;
+                margin-bottom: -100px;
+            }
+        }
+        &:nth-child(odd) .content {
+            width: 60vw;
+            left: 0px;
+        }
+        &:nth-child(even) .content {
+            left: calc(-#{$content-width} - 4rem);
+        }
+    }
+  }
+}
+
+/* -------------------------
+   ----- Media Queries ----- 
+   ------------------------- */
+
+@media screen and (max-width: 1020px) {
+  .timeline ul li .content {
+    width: 41vw;
+  }
+  .timeline ul li:nth-child(even) .content {
+    left: calc(-41vw - 45px);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .timeline ul li {
+    margin-left: 20px;
+    
+    .content {
+      width: calc(100vw - 100px);
+    
+      h2{
+        text-align: initial;
+      }
+    }
+    
+    &:nth-child(even) .content {
+      left: 45px;
+    }
+
+  }
+}
