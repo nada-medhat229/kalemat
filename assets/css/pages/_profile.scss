@@ -1,31 +1,99 @@
 .profile{
-    .nav-pills .nav-link {
-        color: #909090;
-        text-align: start;
-        font-size: 22px;
-        display: flex;
-        align-items: center;
-        
-        &.active, .nav-pills .show>.nav-link {
-            color: $color-black;
-            background-color: transparent;
-        font-weight: 600;
-
-        }
-        span{
-            display: inline-block;
-            content: "";
-            width: 3px;
-            height: 25px;
-            border-radius: 25px;
-            background-color: #909090;
-            margin-left: 15px;
-        }
-        &.active{
+    .nav-pills{
+        background: $color-white;
+        border-radius: 15px;
+        .nav-link {
+            padding-right: 0;
+            color: #909090;
+            text-align: start;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            border-radius: 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ECECEC;
+            
+            &.active, .nav-pills .show>.nav-link {
+                color: $color-black;
+                background-color: transparent;
+            font-weight: 600;
+    
+            }
             span{
-                background: #000;
+                display: inline-block;
+                content: "";
+                width: 3px;
+                height: 25px;
+                border-radius: 25px;
+                background-color: #909090;
+                margin-left: 15px;
+            }
+            &.active{
+                span{
+                    background: #000;
+                }
             }
         }
+    } 
+    .profile-pic-section{
+        position: relative;
+        top: -70px;
+        .profile-pic{
+            width: max-content;
+            margin: auto;
+            img{
+                border-radius: 15px;
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+              }
+              #file ,.profile-pic #uploadBtn{
+                display: none;
+              }
+              
+              .profile-pic-icon {
+                position: absolute;
+                top: 0%;
+                bottom: 0%;
+                right: 0%;
+                display: flex;
+                
+                width: 97%;
+                align-items: center;
+                justify-content: center;
+                z-index: 3;
+                opacity: 0;
+                background-color: #00000033;
+                color: $color-white;
+                font-size: xx-large;
+                border-radius: 15px;
+                transition: .2s;
+                cursor: pointer;
+              }
+              &:hover .profile-pic-icon {
+                opacity: 1;
+              }
+              i {
+                opacity: 0;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 35%;
+                left: 35%;
+                background: $color-white;
+                border-radius: 50%;
+                color: #000;
+                z-index: 9;
+             }
+             &:hover i {
+                opacity: 1;
+              }
+          }
     }
+   
    
 }
