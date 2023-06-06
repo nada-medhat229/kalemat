@@ -258,23 +258,23 @@ border-radius: 40px;
 
 }
 @include sm{
-    .single-publish {
-        .nav-pills .nav-link .bi {
-            width: 35px;
-            height: 35px;
-        }
-        .nav-link{
-            &.active, .nav-pills .show>.nav-link {
-                .bi{    
-                    width: 39px;
-                    font-size: 22px;
-                    height: 19px;
-                    margin-top: 9px;
-                    margin-bottom: 12px;
-                }
-            }
-        }  
+    .single-publish .nav-pills .nav-link .bi {
+        width: 35px;
+        height: 35px;
     }
+  .single-publish{
+    .nav-link{
+        &.active, .nav-pills .show>.nav-link {
+            .bi{    
+                width: 39px;
+                font-size: 22px;
+                height: 19px;
+                margin-top: 9px;
+                margin-bottom: 12px;
+            }
+        }
+    }  
+  }
 }
 @include xs{
     .single-publish .nav-pills .nav-link{
@@ -294,3 +294,21 @@ border-radius: 40px;
         }
     }
 }
+.sec-store{
+            
+    direction: rtl;
+    img{
+        max-height: 300px;
+        border-radius: 12px;
+        height: 250px;
+    }
+    h5{
+        padding: 15px 0;
+
+        a{
+            font-weight: 600;
+            color: $color-black;
+        }
+    }
+   
+  }
