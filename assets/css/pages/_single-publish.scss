@@ -292,3 +292,21 @@ border-radius: 40px;
         }
     }
 }
+.sec-store{
+            
+    direction: rtl;
+    img{
+        max-height: 300px;
+        border-radius: 12px;
+        height: 250px;
+    }
+    h5{
+        padding: 15px 0;
+
+        a{
+            font-weight: 600;
+            color: $color-black;
+        }
+    }
+   
+  }

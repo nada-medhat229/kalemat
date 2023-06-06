@@ -32,24 +32,25 @@
 }
 .grid-authors{
     text-align: center;
-    .author-cover{
-        width: 100%;
-        height: calc(100% - 24px);
-        padding: 4px;
-        border-radius: 50%;
-        overflow: hidden;
-        background: $color-main;
-        img{
-            border-radius: 50%;
-            object-fit: cover;
-        }
-    }
-    .author-name{
-        margin-top: 1rem;
-        font-weight: bold;
-    }
+  
     .pagination {
         margin-top: 3rem;
     }
 
+}
+.author-cover{
+    width: 100%;
+    height: calc(100% - 24px);
+    padding: 4px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: $color-main;
+    img{
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+.author-name{
+    margin-top: 1rem;
+    font-weight: bold;
 }

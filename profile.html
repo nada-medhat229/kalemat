@@ -114,7 +114,7 @@
                 الأحداث
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="blogs.html">المدونة</a></li>
+                <li><a class="dropdown-item" href="blog.html">المدونة</a></li>
                 <li><a class="dropdown-item" href="news.html">الأخبار</a></li>
               </ul>
             </li>
@@ -159,48 +159,212 @@
     <section class="profile mt-5 pb-5">
       <div class="container">
       
-            <div class="row mt-5">
-                <div class="col-md-3">
-                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                      <div class="profile-pic-section">
-                        <div class="profile-pic position-relative">
-                            <img class="" src="/assets/images/5c6571dce75a731743f4f1454360d9a7.jpg" alt="" id="photo">
-                            <i class="bi bi-camera"></i>
-                            <input type="file" id="file" accept="images/*">
-                            <label for="file" id="uploadBtn">
-                              <div class="profile-pic-icon">
-                              </div>
-                            </label>
-                          </div>
-                          <div class="button-case text-center">
-                            <button type="submit" class="btn-main mt-3 py-1">حفظ</button>
+            <div class="row mt-5 align-items-stretch">
+                <div class="col-lg-3">
+                  <div class="nav-content mb-3 wow animate__fadeInRight">
+                    <div class="profile-pic-section">
+                      <div class="profile-pic position-relative">
+                          <img class="" src="/assets/images/5c6571dce75a731743f4f1454360d9a7.jpg" alt="" id="photo">
+                          <i class="bi bi-camera"></i>
+                          <input type="file" id="file" accept="images/*">
+                          <label for="file" id="uploadBtn">
+                            <div class="profile-pic-icon">
+                            </div>
+                          </label>
                         </div>
-                      
-                    </div>
-                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                            <span></span>
-                            الملف الشخصي</button>
-                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                            <span></span>
-                            تغيير الرقم السري</button>
-                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                            <span></span>
-                            المفضلة</button>
-                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-                            <span></span>
-                            الكتب المحملة</button>
-                        <button class="nav-link" id="v-pills-load-tab" data-bs-toggle="pill" data-bs-target="#v-pills-load" type="button" role="tab" aria-controls="v-pills-load" aria-selected="false">
-                            <span></span>
-                            قائمة المتابعة </button>
+                        <div class="text-center pt-4">
+                          <h5 class="fw-bold">
+                            اسم المستخدم
+                          </h5>
+                          <output name="" style="color: #909090;">Mail22@mail.com</output>
                       </div>
+                    
+                  </div>
+                      <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      
+                          <button class="nav-link active wow animate__fadeInDown"  data-wow-duration="1s" data-wow-delay=".5s" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" >
+                              <span></span>
+                              الملف الشخصي</button>
+                          <button class="nav-link wow animate__fadeInDown"  data-wow-duration="1s" data-wow-delay=".7s"  id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                              <span></span>
+                              تغيير الرقم السري</button>
+                          <button class="nav-link wow animate__fadeInDown"  data-wow-duration="1s" data-wow-delay=".9s"  id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                              <span></span>
+                              المفضلة</button>
+                          <button class="nav-link wow animate__fadeInDown"  data-wow-duration="1s" data-wow-delay="1.1s"  id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                              <span></span>
+                              الكتب المحملة</button>
+                          <button class="nav-link wow animate__fadeInDown"  data-wow-duration="1s" data-wow-delay="1.3s"  id="v-pills-load-tab" data-bs-toggle="pill" data-bs-target="#v-pills-load" type="button" role="tab" aria-controls="v-pills-load" aria-selected="false">
+                              <span></span>
+                              قائمة المتابعة </button>
+                              <a href="" class="text-center logout-link"><i class="bi bi-box-arrow-right"></i>
+                              تسجيل الخروج</a>
+                        </div>
+                  </div>
+               
                 </div>
-               <div class="col-md-9">
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="v-pills-load" role="tabpanel" aria-labelledby="v-pills-load-tab" tabindex="0">...</div>
+               <div class="col-lg-9">
+                <div class="tab-content mb-3 wow animate__fadeInLeft" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                      <form action="">
+                        <div class="mb-5">
+                          <label  class="form-label">الاسم  </label>
+                          <input type="text" class="form-control" placeholder="اسم المستخدم">
+                        </div>
+                        <div class="mb-5">
+                          <label  class="form-label">البريد الإلكتروني  </label>
+                          <input type="email" class="form-control" placeholder="البريد الإلكتروني ">
+                        </div>
+                        <button class="edit" type="submit">
+                         
+                          تعديل
+                        </button>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                      <h5 class="text-center mb-5">تعديل الرقم السري</h5>
+                      <form action="">
+                        <div class="mb-5">
+                          <label  class="form-label">كلمة المرور الحالية  </label>
+                          <input type="password" class="form-control" placeholder="********* ">
+                        </div>
+                        <div class="mb-5">
+                          <label  class="form-label">كلمة المرور الجديدة   </label>
+                          <input type="password" class="form-control" placeholder="*********  ">
+                        </div>
+                        <button class="edit" type="submit">
+                          حفظ
+                        </button>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                      <div class="store">
+                        <div class="row">
+                          <div class="col-lg-4 col-md-6">
+                            <div class="sec-store">
+                              <img src="./assets/images/Group 427319511.png" alt="">
+                            
+                              <div class="d-flex justify-content-between align-items-center">
+                                <h5>عن العيش والموت</h5>
+                                <div class="">
+                                  <i class="fav bi added bi-heart-fill"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div class="sec-store">
+                              <img src="./assets/images/Group 427319511.png" alt="">
+                            
+                              <div class="d-flex justify-content-between align-items-center">
+                                <h5>عن العيش والموت</h5>
+                                <div class="">
+                                  <i class="fav bi added bi-heart-fill"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div class="sec-store">
+                              <img src="./assets/images/Group 427319511.png" alt="">
+                            
+                              <div class="d-flex justify-content-between align-items-center">
+                                <h5>عن العيش والموت</h5>
+                                <div class="">
+                                  <i class="fav bi added bi-heart-fill"></i>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                      <div class="store">
+                        <div class="row">
+                    
+                          <div class="col-lg-4 col-md-6">
+                            <div class="sec-store">
+                              <img src="./assets/images/Group 427319511.png" alt="">
+                
+                              <h5 class="text-center">
+                                <a href="/single-publish.html"> عن العيش والموت  </a>
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div class="sec-store">
+                              <img src="./assets/images/Group 427319511.png" alt="">
+                
+                              <h5 class="text-center">
+                                <a href="/single-publish.html"> عن العيش والموت </a>
+                              </h5>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                            <div class="sec-store">
+                              <img src="./assets/images/Group 427319511.png" alt="">
+                
+                              <h5 class="text-center">
+                                <a href="/single-publish.html"> عن العيش والموت </a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-load" role="tabpanel" aria-labelledby="v-pills-load-tab" tabindex="0">
+                      <div class="row">
+                        <div
+                         class="col-lg-4 col-md-6">
+                          <div class="author-item position-relative">
+                            <a class="router-link" href="author-details.html">
+                            </a>
+                            <div class="author-cover">
+                              <img src="assets/images/writer2.jpg" alt="">
+                            </div>
+                            <h3 class="author-name text-center">اسم المؤلف</h3>
+                            <div class="text-center cancel-follow">
+                              <i class="bi bi-hand-thumbs-up"></i>
+                              إلغاء المتابعة
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                        class="col-lg-4 col-md-6">
+                         <div class="author-item position-relative">
+                           <a class="router-link" href="author-details.html">
+                           </a>
+                           <div class="author-cover">
+                             <img src="assets/images/writer2.jpg" alt="">
+                           </div>
+                           <h3 class="author-name text-center">اسم المؤلف</h3>
+                           <div class="text-center cancel-follow">
+                             <i class="bi bi-hand-thumbs-up"></i>
+                             إلغاء المتابعة
+                           </div>
+                         </div>
+                       </div>
+                       <div
+                        class="col-lg-4 col-md-6">
+                         <div class="author-item position-relative">
+                           <a class="router-link" href="author-details.html">
+                           </a>
+                           <div class="author-cover">
+                             <img src="assets/images/writer2.jpg" alt="">
+                           </div>
+                           <h3 class="author-name text-center">اسم المؤلف</h3>
+                           <div class="text-center cancel-follow">
+                             <i class="bi bi-hand-thumbs-up"></i>
+                             إلغاء المتابعة
+                           </div>
+                         </div>
+                       </div>
+                      </div>
+                    </div>
                   </div>
                </div>
                  
@@ -244,7 +408,7 @@
               <div class="col-6">
                 <ul>
                   <li class="wow animate__fadeInRight" data-wow-delay="0">
-                    <a href="blogs.html"> المدونة </a>
+                    <a href="blog.html"> المدونة </a>
                   </li>
                   <li class="wow animate__fadeInRight" data-wow-delay=".2s">
                     <a href="news.html"> الأخبار </a>
