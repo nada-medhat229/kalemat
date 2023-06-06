@@ -262,6 +262,7 @@ border-radius: 40px;
         width: 35px;
         height: 35px;
     }
+  .single-publish{
     .nav-link{
         &.active, .nav-pills .show>.nav-link {
             .bi{    
@@ -273,6 +274,7 @@ border-radius: 40px;
             }
         }
     }  
+  }
 }
 @include xs{
     .single-publish .nav-pills .nav-link{

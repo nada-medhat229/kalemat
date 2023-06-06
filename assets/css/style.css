@@ -2738,7 +2738,7 @@ section {
     width: 35px;
     height: 35px;
   }
-  .nav-link.active .bi, .nav-link .nav-pills .show > .nav-link .bi {
+  .single-publish .nav-link.active .bi, .single-publish .nav-link .nav-pills .show > .nav-link .bi {
     width: 39px;
     font-size: 22px;
     height: 19px;
