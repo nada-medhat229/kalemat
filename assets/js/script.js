@@ -1,3 +1,13 @@
+// replace text
+$.fn.toggleText = function(t1, t2){
+  if(this.text() == t1){
+    this.text(t2);
+  }else{                   
+    this.text(t1);
+  }
+  return this;
+};
+
 $(document).ready(function () {
   // loading
   setTimeout(function () {
@@ -169,7 +179,24 @@ $(document).ready(function () {
     $(this).toggleClass("added");
     $(this).toggleClass("bi-heart bi-heart-fill");
     console.log(this)
-})
+  })
+
+  // follow 
+  $(".follow").click(function () {
+    $(this).toggleClass("unfollow");
+    $(this).find('span').toggleText('متابعة','الغاء المتابعة');
+    console.log(this)
+  })
+
+  // make auth-img circle 
+  var authWidth = $('.author-cover').width();
+  $('.author-cover').height(authWidth)
+  // -- responsive --
+  $(window).resize(function(){
+    var authWidth = $('.author-cover').width();
+  $('.author-cover').height(authWidth)
+  })
+
 
   // niceSelect
   $('select').niceSelect();
