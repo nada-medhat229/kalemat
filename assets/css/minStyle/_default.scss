@@ -356,3 +356,17 @@ section{
     transform: translate(3.314px, 30.0985px);
   }
 }
+.show-pass {
+  position: absolute;
+  left: 2px;
+  top: 0px;
+  height: 100%;
+  line-height: 40px;
+  padding: 0;
+  border: 0;
+  background-color: #f7f8f9;
+  width: 40px;
+  border-radius: 5px;
+  font-size: 19px;
+  color: #8d8d8d;
+}

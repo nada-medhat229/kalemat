@@ -665,6 +665,21 @@ section {
   }
 }
 
+.show-pass {
+  position: absolute;
+  left: 2px;
+  top: 0px;
+  height: 100%;
+  line-height: 40px;
+  padding: 0;
+  border: 0;
+  background-color: #f7f8f9;
+  width: 40px;
+  border-radius: 5px;
+  font-size: 19px;
+  color: #8d8d8d;
+}
+
 .overlay {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.26);
@@ -808,6 +823,7 @@ section {
 }
 
 .login .login-content .package-input {
+  position: relative;
   background: #FCFCFC;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2260,6 +2276,15 @@ section {
   padding: 5px 8px;
 }
 
+.profile .package-input {
+  background: transparent;
+  position: relative;
+}
+
+.profile .package-input .show-pass {
+  background-color: transparent;
+}
+
 .news .news-wrapper {
   margin-top: 20px;
   margin-bottom: 25px;
@@ -2737,6 +2762,7 @@ section {
   .single-publish .nav-pills .nav-link .bi {
     width: 35px;
     height: 35px;
+    margin-top: 5px;
   }
   .single-publish .nav-link.active .bi, .single-publish .nav-link .nav-pills .show > .nav-link .bi {
     width: 39px;

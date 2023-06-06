@@ -261,6 +261,7 @@ border-radius: 40px;
     .single-publish .nav-pills .nav-link .bi {
         width: 35px;
         height: 35px;
+        margin-top: 5px;
     }
   .single-publish{
     .nav-link{
@@ -275,6 +276,7 @@ border-radius: 40px;
         }
     }  
   }
+ 
 }
 @include xs{
     .single-publish .nav-pills .nav-link{
