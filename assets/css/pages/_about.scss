@@ -1,4 +1,7 @@
 // .aboutUs{
+//   background-image: url("../images/about-bg.jpg");
+//   background-size: 250% 100%;
+//   background-repeat: no-repeat;
 // }
 .title{
     color: $color-title;
@@ -76,7 +79,7 @@ $content-width: 450px;
                 left: 4px;
                 right: unset;
                 top: 0px;
-                transform: translate(-50%, 30px);
+                transform: translate(-50%, 45px);
             }
    
         }
@@ -90,7 +93,7 @@ $content-width: 450px;
             border-bottom: 2px dashed $color-second;
             &:before{
                 top: 50%;
-                transform: translate(-18.2px, 26px);
+                transform: translate(-18.2px, 40px);
             }
             .content{
                 padding: 0 2rem;
@@ -101,7 +104,7 @@ $content-width: 450px;
             }
         }
         &:nth-child(odd) .content {
-            width: 60vw;
+            width: 50vw;
             left: 0px;
         }
         &:nth-child(even) .content {
@@ -111,34 +114,43 @@ $content-width: 450px;
   }
 }
 
-/* -------------------------
-   ----- Media Queries ----- 
-   ------------------------- */
 
-@media screen and (max-width: 1020px) {
-  .timeline ul li .content {
-    width: 41vw;
-  }
-  .timeline ul li:nth-child(even) .content {
-    left: calc(-41vw - 45px);
+@include md{
+  .timeline ul li {
+    .content {
+      width: 100% !important;
+    }
+    &:nth-child(even) .content {
+      left: 0 !important;
+    }
+    &:nth-child(even) .content-wrapper {
+      padding: 2rem 0 5rem 4rem;
+    }
   }
 }
+@include sm{
+  .timeline ul {
+    padding: 30px;
+    li {
 
-@media screen and (max-width: 700px) {
-  .timeline ul li {
-    margin-left: 20px;
-    
-    .content {
-      width: calc(100vw - 100px);
-    
-      h2{
-        text-align: initial;
+      .content-wrapper {
+        padding: 2rem 2rem 2rem 0;
+      }
+      &:nth-child(even) .content-wrapper{
+        padding: 2rem 0 2rem 2rem;
+      }
+      &:last-child .content-wrapper {
+        padding: 2rem 2rem 2rem 0;
+      }
+      &:last-child .content-wrapper .content {
+        padding: 0 !important;
+        background-color: transparent;
+        margin-bottom: 0;
+      }
+      &:last-child .content-wrapper:before {
+        top: 0;
+        transform: translate(36px, 40px);
       }
     }
-    
-    &:nth-child(even) .content {
-      left: 45px;
-    }
-
   }
 }
