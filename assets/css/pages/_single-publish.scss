@@ -247,6 +247,25 @@ border-radius: 40px;
 
 }
 @include sm{
+    .single-publish .nav-pills .nav-link .bi {
+        width: 35px;
+        height: 35px;
+        margin-top: 5px;
+    }
+  .single-publish{
+    .nav-link{
+        &.active, .nav-pills .show>.nav-link {
+            .bi{    
+                width: 39px;
+                font-size: 22px;
+                height: 19px;
+                margin-top: 9px;
+                margin-bottom: 12px;
+            }
+        }
+    }  
+  }
+ 
     .single-publish {
         border-radius: 25px;
         .nav-pills .nav-link .bi {

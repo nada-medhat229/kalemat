@@ -190,6 +190,17 @@ $(document).ready(function () {
     $(this).toggleClass("added");
     $(this).toggleClass("bi-heart bi-heart-fill");
     console.log(this)
+})
+$(".show-pass").click(function () {
+  $(this).find('i').toggleClass("bi bi-eye-slash bi-eye");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+      input.attr("type", "text");
+  } else {
+      input.attr("type", "password");
+  }
+  $(this).toggleClass('active');
+});
   })
 
   // follow 
@@ -214,7 +225,6 @@ $(document).ready(function () {
 
   // wow.js init
   new WOW().init();
-});
 
 
 
