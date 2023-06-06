@@ -73,16 +73,21 @@ border-radius: 40px;
         margin-right: 0px;
         height: 100%;
         .nav-link{
-            padding: 20px 5px;
+            padding: 10px 0px;
             background: $color-main;
-            border-radius: 0;
+            // border-radius: 0;
             text-align: right;
             position: relative;
             color: $color-white;
+            border-radius: 0 100% 100% 0;
+            text-align: right;
+            display: flex;
+            width: 100%;
+            align-items: center;
             .bi{
-                position: absolute;
-                top: 8px;
-                right: -1px;
+                // position: absolute;
+                // top: 8px;
+                // right: -1px;
                 width: 55px;
                 height: 59px;
                 background: transparent;
@@ -92,20 +97,21 @@ border-radius: 40px;
                 font-size: 24px;
             }
             h4{
-                margin-right: 40px;
+                margin-right: 10px;
 
             }
-            &:first-of-type{
-                border-radius:40px 0 0 0 ;
+            // &:first-of-type{
+            //     border-radius:40px 0 0 0 ;
 
-            }
+            // }
 
             &.active, .nav-pills .show>.nav-link {
-                border-radius: 0 40px 40px 0;
+                // border-radius: 0 40px 40px 0;
                 color: #cd6b5a;
+                padding: 25px 0px;
                 background-color: #fff;
                 position: relative;
-                padding: 40px 0;
+                // padding: 40px 0;
                 font-weight: 600;
                 .bi{
                                
@@ -167,24 +173,7 @@ border-radius: 40px;
             width: 95%;
             margin: auto;
             padding-right: 20px;
-          .sec-store{
-            
-            direction: rtl;
-            img{
-                max-height: 300px;
-                border-radius: 12px;
-                height: 250px;
-            }
-            h5{
-                padding: 15px 0;
-
-                a{
-                    font-weight: 600;
-                    color: $color-black;
-                }
-            }
-           
-          }
+          
           &::-webkit-scrollbar-thumb {
             background:$color-main;
             border-radius: 12px;
@@ -214,14 +203,14 @@ border-radius: 40px;
         .nav-link{
             padding-right: 0 !important;
             &.active{
-                padding: 0;
+                padding: 40px 0;
             }
-            &.active::after ,
-                &.active::before {
-                    display: none;
-            }
+            // &.active::after ,
+            //     &.active::before {
+            //         display: none;
+            // }
             &.active, .nav-pills .show>.nav-link {
-                border-radius: 50%;
+                // border-radius: 50%;
                
                 .bi{    
                     position: relative; 
@@ -229,19 +218,19 @@ border-radius: 40px;
                     right: 0;
                     width: 50px;
                     height: 25px;
-                    margin-top: 12px;
-                    margin-bottom: 12px;
                 }
             }
             h4{
-                display: none;
+                // display: none;
+                margin-right: 5px !important;
+                font-size: 16px;
             }
             .bi{
                 z-index: 111;
                 top: 0 !important;
                 right: 0 !important;
-                margin-top: 12px;
-                margin-bottom: 12px;
+                // margin-top: 12px;
+                // margin-bottom: 12px;
             }
         }
     }
@@ -258,30 +247,36 @@ border-radius: 40px;
 
 }
 @include sm{
-    .single-publish .nav-pills .nav-link .bi {
-        width: 35px;
-        height: 35px;
-    }
-  .single-publish{
-    .nav-link{
-        &.active, .nav-pills .show>.nav-link {
-            .bi{    
-                width: 39px;
-                font-size: 22px;
-                height: 19px;
-                margin-top: 9px;
-                margin-bottom: 12px;
-            }
+    .single-publish {
+        border-radius: 25px;
+        .nav-pills .nav-link .bi {
+            width: 35px;
+            height: 35px;
         }
-    }  
-  }
+        .nav-link{
+            &.active, .nav-pills .show>.nav-link {
+                padding: 0 !important;
+                .bi{    
+                    width: 40px;
+                    font-size: 22px;
+                    height: 40px;
+                }
+            }
+            h4{
+                display: none;
+            }
+            &.active::after, &.active::before{
+                height: 45px !important;
+            }
+        }  
+    }
 }
 @include xs{
     .single-publish .nav-pills .nav-link{
         &.active .bi, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link .bi {
       
             width: 40px;
-            height: 20px;
+            height: 40px;
             margin-top: 8px;
         }
         .item {
@@ -289,7 +284,6 @@ border-radius: 40px;
             height: 40px;
         }
         .bi {
-      
             margin-top: 5px;
         }
     }
